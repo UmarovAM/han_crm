@@ -1,0 +1,366 @@
+===База данных user2014_han
+
+== Структура таблицы activity_log
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|user_id|int|Да|NULL
+|action|varchar(100)|Нет|
+|entity_type|varchar(50)|Да|NULL
+|entity_id|int|Да|NULL
+|details|text|Да|NULL
+|ip_address|varchar(45)|Да|NULL
+|user_agent|text|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+== Дамп данных таблицы activity_log
+
+|1|1|create|sale|1|Создана продажа №000001 на сумму 520 сом (оплачено: 520)|217.29.29.191|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36|2025-11-16 14:43:31
+|2|1|create|sale|2|Создана продажа №000002 на сумму 520 сом (оплачено: 530)|217.29.29.191|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36|2025-11-16 14:57:12
+|3|1|create|sale|3|Создана продажа №000003 на сумму 520 сом (оплачено: 500)|217.29.29.191|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36|2025-11-16 14:57:21
+|5|1|create|production|2|Произведено: Береке семечки 2Кг - 7 шт (day)|217.29.29.191|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36|2025-11-16 17:45:56
+|6|1|login|user|1|Вход в систему|46.251.215.4|Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36|2025-11-16 18:35:07
+|7|1|login|user|1|Вход в систему|46.251.201.205|Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36 EdgA/142.0.0.0|2025-11-16 19:53:55
+|8|1|login|user|1|Вход в систему|185.53.228.252|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0|2025-11-16 23:03:22
+|9|1|create|production|3|Произведено: Береке семечки 2Кг - 6 шт (day)|185.53.228.252|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0|2025-11-16 23:04:51
+|10|1|create|client|4|Создан клиент: 1 клиент|185.53.228.252|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0|2025-11-16 23:06:36
+|11|1|login|user|1|Вход в систему|217.29.29.191|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36|2025-11-17 12:11:37
+== Структура таблицы clients
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|name|varchar(200)|Нет|
+|phone|varchar(20)|Да|NULL
+|address|text|Да|NULL
+|current_overpayment|decimal(12,2)|Нет|0.00
+|is_active|tinyint(1)|Нет|1
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|updated_at|timestamp|Да|CURRENT_TIMESTAMP
+|deleted_at|timestamp|Да|NULL
+|created_by|int|Да|NULL
+== Дамп данных таблицы clients
+
+|1|ТОО &quot;АЗИЯ&quot;|+996 555 789 012|г. Бишкек, пр. Чуй|0.00|1|2025-11-16 12:12:02|2025-11-16 12:12:02|NULL|1
+|2|Абдулло|+996 555 123 456|г. Бишкек|10.00|1|2025-11-16 12:12:02|2025-11-16 14:57:12|NULL|1
+|3|ТОО &quot;Магнум&quot;|+996 555 999 888|г. Ош|0.00|1|2025-11-16 12:12:02|2025-11-16 12:12:02|NULL|1
+== Дублирующая структура для представления client_balances
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|id|int|Нет|0
+|name|varchar(200)|Нет|
+|phone|varchar(20)|Да|NULL
+|address|text|Да|NULL
+|is_active|tinyint(1)|Нет|1
+|total_overpayment|decimal(12,2)|Нет|0.00
+|total_debt|decimal(34,2)|Нет|0.00
+|total_sales|bigint|Нет|0
+== Структура таблицы client_overpayments
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|**transaction_id**|varchar(50)|Да|NULL
+|client_id|int|Нет|
+|sale_id|int|Да|NULL
+|amount|decimal(12,2)|Нет|
+|type|enum(&#039;created&#039;, &#039;withdrawn&#039;, &#039;adjusted&#039;)|Нет|
+|note|text|Да|NULL
+|metadata|json|Да|NULL
+|balance_after|decimal(12,2)|Нет|0.00
+|version|int|Нет|1
+|user_id|int|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+== Дамп данных таблицы client_overpayments
+
+|1|NULL|2|2|10.00|created|Переплата по чеку №000002|NULL|10.00|1|1|2025-11-16 14:57:12
+== Структура таблицы payments
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|**transaction_id**|varchar(50)|Да|NULL
+|sale_id|int|Нет|
+|overpayment_record_id|int|Да|NULL
+|amount|decimal(12,2)|Нет|
+|payment_method|enum(&#039;cash&#039;, &#039;card&#039;, &#039;transfer&#039;, &#039;overpayment&#039;)|Нет|cash
+|note|text|Да|NULL
+|version|int|Нет|1
+|user_id|int|Да|NULL
+|metadata|json|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|deleted_at|timestamp|Да|NULL
+== Дамп данных таблицы payments
+
+|1|NULL|1|NULL|520.00|cash|Оплата при продаже|1|1|NULL|2025-11-16 14:43:31|NULL
+|2|NULL|2|NULL|530.00|cash|Оплата при продаже|1|1|NULL|2025-11-16 14:57:12|NULL
+|3|NULL|3|NULL|500.00|cash|Оплата при продаже|1|1|NULL|2025-11-16 14:57:21|NULL
+== Структура таблицы production
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|product_id|int|Нет|
+|quantity|int|Нет|
+|shift|enum(&#039;day&#039;, &#039;night&#039;)|Нет|
+|note|text|Да|NULL
+|user_id|int|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|updated_at|timestamp|Да|CURRENT_TIMESTAMP
+|deleted_at|timestamp|Да|NULL
+== Дамп данных таблицы production
+
+== Триггеры production
+
+|------
+|Имя|Время|Событие|Определение
+|------
+|trg_production_audit|AFTER|INSERT|BEGIN
+  DECLARE qty_after INT DEFAULT 0;
+  
+  SELECT COALESCE(quantity, 0) INTO qty_after 
+  FROM stock 
+  WHERE product_id = NEW.product_id;
+  
+  INSERT INTO stock_movements (
+    product_id, 
+    quantity_change, 
+    quantity_after, 
+    movement_type, 
+    reference_id, 
+    note, 
+    user_id
+  ) VALUES (
+    NEW.product_id, 
+    NEW.quantity, 
+    qty_after, 
+    &#039;production&#039;, 
+    NEW.id, 
+    NEW.note, 
+    NEW.user_id
+  );
+END
+== Структура таблицы products
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|name|varchar(200)|Нет|
+|price|decimal(12,2)|Нет|0.00
+|is_active|tinyint(1)|Нет|1
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|updated_at|timestamp|Да|CURRENT_TIMESTAMP
+|deleted_at|timestamp|Да|NULL
+== Дамп данных таблицы products
+
+|1|ХАН семечки солёные 2Кг|191.00|1|2025-11-16 12:12:02|2025-11-16 12:12:02|NULL
+|2|Береке семечки 2Кг|520.00|1|2025-11-16 12:12:02|2025-11-16 12:12:02|NULL
+|3|ХАН семечки солёные 100гр|55.00|1|2025-11-16 12:12:02|2025-11-16 12:12:02|NULL
+|4|ХАН семечки солёные 60гр|35.00|1|2025-11-16 12:12:02|2025-11-16 12:12:02|NULL
+|5|ХАН семечки солёные 25гр|18.00|1|2025-11-16 12:12:02|2025-11-16 12:12:02|NULL
+|6|ХАН семечки 100гр|50.00|1|2025-11-16 12:12:02|2025-11-16 12:12:02|NULL
+|7|ХАН семечки 60гр|32.00|1|2025-11-16 12:12:02|2025-11-16 12:12:02|NULL
+|8|ХАН Семечки BBQ 200г|112.00|1|2025-11-16 12:12:02|2025-11-16 12:12:02|NULL
+|9|ХАН Семечки микс 150г|80.00|1|2025-11-16 12:12:02|2025-11-16 12:12:02|NULL
+|10|ХАН Семечки премиум 250г|130.00|1|2025-11-16 12:12:02|2025-11-16 12:12:02|NULL
+== Структура таблицы returns
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|sale_id|int|Нет|
+|total_amount|decimal(12,2)|Нет|
+|reason|text|Да|NULL
+|refund_method|enum(&#039;cash&#039;, &#039;overpayment&#039;, &#039;debt_reduction&#039;)|Нет|overpayment
+|user_id|int|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|updated_at|timestamp|Да|CURRENT_TIMESTAMP
+|deleted_at|timestamp|Да|NULL
+== Дамп данных таблицы returns
+
+== Структура таблицы return_items
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|return_id|int|Нет|
+|sale_item_id|int|Нет|
+|product_id|int|Нет|
+|quantity|int|Нет|
+|price|decimal(12,2)|Нет|
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+== Дамп данных таблицы return_items
+
+== Структура таблицы sales
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|**receipt_number**|varchar(50)|Нет|
+|client_id|int|Нет|
+|total|decimal(12,2)|Нет|0.00
+|paid|decimal(12,2)|Нет|0.00
+|debt|decimal(12,2)|Нет|0.00
+|new_overpayment|decimal(12,2)|Нет|0.00
+|user_id|int|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|updated_at|timestamp|Да|CURRENT_TIMESTAMP
+|deleted_at|timestamp|Да|NULL
+== Дамп данных таблицы sales
+
+|1|000001|2|520.00|520.00|0.00|0.00|1|2025-11-16 14:43:31|2025-11-16 14:43:31|NULL
+|2|000002|2|520.00|530.00|0.00|10.00|1|2025-11-16 14:57:12|2025-11-16 14:57:12|NULL
+|3|000003|2|520.00|500.00|20.00|0.00|1|2025-11-16 14:57:21|2025-11-16 14:57:21|NULL
+== Дублирующая структура для представления sales_list
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|id|int|Нет|0
+|receipt_number|varchar(50)|Нет|
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|client_name|varchar(200)|Нет|
+|client_phone|varchar(20)|Да|NULL
+|total|decimal(12,2)|Нет|0.00
+|paid|decimal(12,2)|Нет|0.00
+|debt|decimal(12,2)|Нет|0.00
+|new_overpayment|decimal(12,2)|Нет|0.00
+|created_by|varchar(100)|Да|NULL
+|items_count|bigint|Нет|0
+|total_quantity|decimal(32,0)|Нет|0
+|items_list|text|Да|NULL
+== Структура таблицы sale_items
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|sale_id|int|Нет|
+|product_id|int|Нет|
+|quantity|int|Нет|
+|price|decimal(12,2)|Нет|
+|returned_quantity|int|Нет|0
+|user_id|int|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+== Дамп данных таблицы sale_items
+
+|1|1|2|1|520.00|0|1|2025-11-16 14:43:31
+|2|2|2|1|520.00|0|1|2025-11-16 14:57:12
+|3|3|2|1|520.00|0|1|2025-11-16 14:57:21
+== Структура таблицы stock
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|**product_id**|int|Нет|
+|quantity|int|Нет|0
+|updated_at|timestamp|Да|CURRENT_TIMESTAMP
+== Дамп данных таблицы stock
+
+|1|1|10|2025-11-16 23:05:57
+|2|2|0|2025-11-16 14:57:21
+|3|3|0|2025-11-16 12:12:02
+|4|4|0|2025-11-16 12:12:02
+|5|5|0|2025-11-16 12:12:02
+|6|6|0|2025-11-16 12:12:02
+|7|7|0|2025-11-16 12:12:02
+|8|8|0|2025-11-16 12:12:02
+|9|9|0|2025-11-16 12:12:02
+|10|10|0|2025-11-16 12:12:02
+== Структура таблицы stock_movements
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|product_id|int|Нет|
+|quantity_change|int|Нет|
+|quantity_after|int|Нет|
+|movement_type|enum(&#039;production&#039;, &#039;sale&#039;, &#039;return&#039;, &#039;writeoff&#039;, &#039;adjustment&#039;)|Нет|
+|reference_id|int|Да|NULL
+|note|text|Да|NULL
+|user_id|int|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+== Дамп данных таблицы stock_movements
+
+|1|2|-1|2|sale|1|NULL|1|2025-11-16 14:43:31
+|2|2|-1|1|sale|2|NULL|1|2025-11-16 14:57:12
+|3|2|-1|0|sale|3|NULL|1|2025-11-16 14:57:21
+|5|2|7|0|production|2| |1|2025-11-16 17:45:56
+|6|2|6|0|production|3| |1|2025-11-16 23:04:51
+== Структура таблицы users
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|name|varchar(100)|Нет|
+|**login**|varchar(50)|Нет|
+|password|varchar(255)|Нет|
+|role|enum(&#039;admin&#039;, &#039;manager&#039;, &#039;cashier&#039;)|Нет|cashier
+|is_active|tinyint(1)|Нет|1
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|updated_at|timestamp|Да|CURRENT_TIMESTAMP
+|deleted_at|timestamp|Да|NULL
+== Дамп данных таблицы users
+
+|1|Администратор ХАН|admin|5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5|admin|1|2025-11-16 12:12:02|2025-11-16 12:12:02|NULL
+== Структура таблицы write_offs
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|product_id|int|Нет|
+|quantity|int|Нет|
+|type|enum(&#039;defect&#039;, &#039;expired&#039;, &#039;damage&#039;, &#039;other&#039;)|Да|other
+|reason|text|Нет|
+|user_id|int|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|updated_at|timestamp|Да|CURRENT_TIMESTAMP
+|deleted_at|timestamp|Да|NULL
+== Дамп данных таблицы write_offs
+
+== Структура для представления client_balances
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|id|int|Нет|0
+|name|varchar(200)|Нет|
+|phone|varchar(20)|Да|NULL
+|address|text|Да|NULL
+|is_active|tinyint(1)|Нет|1
+|total_overpayment|decimal(12,2)|Нет|0.00
+|total_debt|decimal(34,2)|Нет|0.00
+|total_sales|bigint|Нет|0
+== Структура для представления sales_list
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|id|int|Нет|0
+|receipt_number|varchar(50)|Нет|
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|client_name|varchar(200)|Нет|
+|client_phone|varchar(20)|Да|NULL
+|total|decimal(12,2)|Нет|0.00
+|paid|decimal(12,2)|Нет|0.00
+|debt|decimal(12,2)|Нет|0.00
+|new_overpayment|decimal(12,2)|Нет|0.00
+|created_by|varchar(100)|Да|NULL
+|items_count|bigint|Нет|0
+|total_quantity|decimal(32,0)|Нет|0
+|items_list|text|Да|NULL

@@ -1,0 +1,289 @@
+===База данных user2014_han
+
+== Структура таблицы activity_log
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|user_id|int|Да|NULL
+|action|varchar(100)|Нет|
+|entity_type|varchar(50)|Да|NULL
+|entity_id|int|Да|NULL
+|details|text|Да|NULL
+|ip_address|varchar(45)|Да|NULL
+|user_agent|text|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+== Структура таблицы clients
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|name|varchar(200)|Нет|
+|phone|varchar(20)|Да|NULL
+|address|text|Да|NULL
+|current_overpayment|decimal(12,2)|Нет|0.00
+|is_active|tinyint(1)|Нет|1
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|updated_at|timestamp|Да|CURRENT_TIMESTAMP
+|deleted_at|timestamp|Да|NULL
+|created_by|int|Да|NULL
+== Дублирующая структура для представления client_balances
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|id|int|Нет|0
+|name|varchar(200)|Нет|
+|phone|varchar(20)|Да|NULL
+|address|text|Да|NULL
+|is_active|tinyint(1)|Нет|1
+|total_overpayment|decimal(12,2)|Нет|0.00
+|total_debt|decimal(34,2)|Нет|0.00
+|total_sales|bigint|Нет|0
+== Структура таблицы client_overpayments
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|**transaction_id**|varchar(50)|Да|NULL
+|client_id|int|Нет|
+|sale_id|int|Да|NULL
+|amount|decimal(12,2)|Нет|
+|type|enum(&#039;created&#039;, &#039;withdrawn&#039;, &#039;adjusted&#039;)|Нет|
+|note|text|Да|NULL
+|metadata|json|Да|NULL
+|balance_after|decimal(12,2)|Нет|0.00
+|version|int|Нет|1
+|user_id|int|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+== Структура таблицы payments
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|**transaction_id**|varchar(50)|Да|NULL
+|sale_id|int|Нет|
+|overpayment_record_id|int|Да|NULL
+|amount|decimal(12,2)|Нет|
+|payment_method|enum(&#039;cash&#039;, &#039;card&#039;, &#039;transfer&#039;, &#039;overpayment&#039;)|Нет|cash
+|note|text|Да|NULL
+|version|int|Нет|1
+|user_id|int|Да|NULL
+|metadata|json|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|deleted_at|timestamp|Да|NULL
+== Структура таблицы production
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|product_id|int|Нет|
+|quantity|int|Нет|
+|shift|enum(&#039;day&#039;, &#039;night&#039;)|Нет|
+|note|text|Да|NULL
+|user_id|int|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|updated_at|timestamp|Да|CURRENT_TIMESTAMP
+|deleted_at|timestamp|Да|NULL
+== Триггеры production
+
+|------
+|Имя|Время|Событие|Определение
+|------
+|trg_production_audit|AFTER|INSERT|BEGIN
+  DECLARE qty_after INT DEFAULT 0;
+  
+  SELECT COALESCE(quantity, 0) INTO qty_after 
+  FROM stock 
+  WHERE product_id = NEW.product_id;
+  
+  INSERT INTO stock_movements (
+    product_id, 
+    quantity_change, 
+    quantity_after, 
+    movement_type, 
+    reference_id, 
+    note, 
+    user_id
+  ) VALUES (
+    NEW.product_id, 
+    NEW.quantity, 
+    qty_after, 
+    &#039;production&#039;, 
+    NEW.id, 
+    NEW.note, 
+    NEW.user_id
+  );
+END
+== Структура таблицы products
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|name|varchar(200)|Нет|
+|price|decimal(12,2)|Нет|0.00
+|is_active|tinyint(1)|Нет|1
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|updated_at|timestamp|Да|CURRENT_TIMESTAMP
+|deleted_at|timestamp|Да|NULL
+== Структура таблицы returns
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|sale_id|int|Нет|
+|total_amount|decimal(12,2)|Нет|
+|reason|text|Да|NULL
+|refund_method|enum(&#039;cash&#039;, &#039;overpayment&#039;, &#039;debt_reduction&#039;)|Нет|overpayment
+|user_id|int|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|updated_at|timestamp|Да|CURRENT_TIMESTAMP
+|deleted_at|timestamp|Да|NULL
+== Структура таблицы return_items
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|return_id|int|Нет|
+|sale_item_id|int|Нет|
+|product_id|int|Нет|
+|quantity|int|Нет|
+|price|decimal(12,2)|Нет|
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+== Структура таблицы sales
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|**receipt_number**|varchar(50)|Нет|
+|client_id|int|Нет|
+|total|decimal(12,2)|Нет|0.00
+|paid|decimal(12,2)|Нет|0.00
+|debt|decimal(12,2)|Нет|0.00
+|new_overpayment|decimal(12,2)|Нет|0.00
+|user_id|int|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|updated_at|timestamp|Да|CURRENT_TIMESTAMP
+|deleted_at|timestamp|Да|NULL
+== Дублирующая структура для представления sales_list
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|id|int|Нет|0
+|receipt_number|varchar(50)|Нет|
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|client_name|varchar(200)|Нет|
+|client_phone|varchar(20)|Да|NULL
+|total|decimal(12,2)|Нет|0.00
+|paid|decimal(12,2)|Нет|0.00
+|debt|decimal(12,2)|Нет|0.00
+|new_overpayment|decimal(12,2)|Нет|0.00
+|created_by|varchar(100)|Да|NULL
+|items_count|bigint|Нет|0
+|total_quantity|decimal(32,0)|Нет|0
+|items_list|text|Да|NULL
+== Структура таблицы sale_items
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|sale_id|int|Нет|
+|product_id|int|Нет|
+|quantity|int|Нет|
+|price|decimal(12,2)|Нет|
+|returned_quantity|int|Нет|0
+|user_id|int|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+== Структура таблицы stock
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|**product_id**|int|Нет|
+|quantity|int|Нет|0
+|updated_at|timestamp|Да|CURRENT_TIMESTAMP
+== Структура таблицы stock_movements
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|product_id|int|Нет|
+|quantity_change|int|Нет|
+|quantity_after|int|Нет|
+|movement_type|enum(&#039;production&#039;, &#039;sale&#039;, &#039;return&#039;, &#039;writeoff&#039;, &#039;adjustment&#039;)|Нет|
+|reference_id|int|Да|NULL
+|note|text|Да|NULL
+|user_id|int|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+== Структура таблицы users
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|name|varchar(100)|Нет|
+|**login**|varchar(50)|Нет|
+|password|varchar(255)|Нет|
+|role|enum(&#039;admin&#039;, &#039;manager&#039;, &#039;cashier&#039;)|Нет|cashier
+|is_active|tinyint(1)|Нет|1
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|updated_at|timestamp|Да|CURRENT_TIMESTAMP
+|deleted_at|timestamp|Да|NULL
+== Структура таблицы write_offs
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|//**id**//|int|Нет|
+|product_id|int|Нет|
+|quantity|int|Нет|
+|type|enum(&#039;defect&#039;, &#039;expired&#039;, &#039;damage&#039;, &#039;other&#039;)|Да|other
+|reason|text|Нет|
+|user_id|int|Да|NULL
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|updated_at|timestamp|Да|CURRENT_TIMESTAMP
+|deleted_at|timestamp|Да|NULL
+== Структура для представления client_balances
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|id|int|Нет|0
+|name|varchar(200)|Нет|
+|phone|varchar(20)|Да|NULL
+|address|text|Да|NULL
+|is_active|tinyint(1)|Нет|1
+|total_overpayment|decimal(12,2)|Нет|0.00
+|total_debt|decimal(34,2)|Нет|0.00
+|total_sales|bigint|Нет|0
+== Структура для представления sales_list
+
+|------
+|Столбец|Тип|Null|По умолчанию
+|------
+|id|int|Нет|0
+|receipt_number|varchar(50)|Нет|
+|created_at|timestamp|Да|CURRENT_TIMESTAMP
+|client_name|varchar(200)|Нет|
+|client_phone|varchar(20)|Да|NULL
+|total|decimal(12,2)|Нет|0.00
+|paid|decimal(12,2)|Нет|0.00
+|debt|decimal(12,2)|Нет|0.00
+|new_overpayment|decimal(12,2)|Нет|0.00
+|created_by|varchar(100)|Да|NULL
+|items_count|bigint|Нет|0
+|total_quantity|decimal(32,0)|Нет|0
+|items_list|text|Да|NULL
