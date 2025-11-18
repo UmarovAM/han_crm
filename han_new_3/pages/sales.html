@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Продажи - HAN CRM</title>
+  
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Стили -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/sales.css">
+</head>
+<body>
+  
+  <!-- Навигация -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <i class="fas fa-store"></i>
+      <span>ХАН CRM</span>
+    </div>
+    
+    <div class="navbar-menu">
+      <a href="/pages/dashboard.html" class="nav-link" id="nav-dashboard">
+        <i class="fas fa-chart-line"></i> Главная
+      </a>
+      <a href="/pages/sales.html" class="nav-link active" id="nav-sales">
+        <i class="fas fa-shopping-cart"></i> Продажи
+      </a>
+      <a href="/pages/clients.html" class="nav-link" id="nav-clients">
+        <i class="fas fa-users"></i> Клиенты
+      </a>
+      <a href="/pages/products.html" class="nav-link" id="nav-products">
+        <i class="fas fa-boxes"></i> Товары
+      </a>
+      <a href="/pages/production.html" class="nav-link" id="nav-production">
+        <i class="fas fa-industry"></i> Производство
+      </a>
+      <a href="/pages/writeoffs.html" class="nav-link" id="nav-writeoffs">
+        <i class="fas fa-trash-alt"></i> Списания
+      </a>
+      <a href="/pages/stock.html" class="nav-link" id="nav-stock">
+        <i class="fas fa-warehouse"></i> Склад
+      </a>
+      <a href="/pages/reports.html" class="nav-link" id="nav-reports">
+        <i class="fas fa-file-alt"></i> Отчёты
+      </a>
+    </div>
+    
+    <div class="navbar-user">
+      <div class="user-info">
+        <div class="user-name" id="user-name">Пользователь</div>
+        <div class="user-role" id="user-role">Роль</div>
+      </div>
+      <button class="btn btn-secondary btn-sm" id="logout-btn">
+        <i class="fas fa-sign-out-alt"></i> Выход
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Основной контент -->
+  <div class="main-content">
+    <div class="container">
+      
+      <!-- Заголовок -->
+      <div class="page-header">
+        <h1><i class="fas fa-shopping-cart"></i> Новая продажа</h1>
+        <div class="page-actions">
+          <button class="btn btn-secondary" id="show-sales-history-btn">
+            <i class="fas fa-history"></i> Журнал продаж
+          </button>
+        </div>
+      </div>
+      
+      <!-- Основная сетка: 2 колонки -->
+      <div class="sales-grid">
+        
+        <!-- Левая колонка: Выбор клиента и товаров -->
+        <div class="sales-left">
+          
+          <!-- Карточка: Выбор клиента -->
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-user"></i> Клиент
+            </div>
+            <div class="card-body">
+              
+              <!-- Поле поиска клиента -->
+              <div class="form-group">
+                <label for="client-search">Поиск клиента</label>
+                <input 
+                  type="text" 
+                  id="client-search" 
+                  class="form-control" 
+                  placeholder="Начните вводить имя или телефон...">
+              </div>
+              
+              <!-- Выбранный клиент -->
+              <div id="selected-client" class="selected-client" style="display: none;">
+                <div class="selected-client-info">
+                  <div class="selected-client-name" id="selected-client-name"></div>
+                  <div class="selected-client-phone" id="selected-client-phone"></div>
+                </div>
+                <div class="selected-client-balance">
+                  <div class="balance-item">
+                    <span>Переплата:</span>
+                    <strong class="text-success" id="client-overpayment">0 сом</strong>
+                  </div>
+                  <div class="balance-item" id="client-debt-block" style="display: none;">
+                    <span>Долг:</span>
+                    <strong class="text-danger" id="client-debt">0 сом</strong>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+          <!-- Карточка: Добавление товара -->
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-box"></i> Добавить товар
+            </div>
+            <div class="card-body">
+              
+              <!-- Поле поиска товара -->
+              <div class="form-group">
+                <label for="product-search">Поиск товара</label>
+                <input 
+                  type="text" 
+                  id="product-search" 
+                  class="form-control" 
+                  placeholder="Начните вводить название...">
+              </div>
+              
+              <!-- Быстрое добавление (после выбора товара) -->
+              <div id="quick-add-block" style="display: none;">
+                <div class="quick-add-product">
+                  <div class="quick-add-info">
+                    <div class="quick-add-name" id="quick-add-product-name"></div>
+                    <div class="quick-add-price">
+                      Цена: <strong id="quick-add-product-price"></strong>
+                    </div>
+                    <div class="quick-add-stock">
+                      Остаток: <strong id="quick-add-product-stock"></strong>
+                    </div>
+                  </div>
+                  <div class="quick-add-controls">
+                    <div class="form-group">
+                      <label>Количество</label>
+                      <input 
+                        type="number" 
+                        id="quick-add-quantity" 
+                        class="form-control" 
+                        min="1" 
+                        value="1">
+                    </div>
+                    <button class="btn btn-primary" id="quick-add-btn">
+                      <i class="fas fa-plus"></i> Добавить
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- Правая колонка: Корзина и оплата -->
+        <div class="sales-right">
+          
+          <!-- Карточка: Корзина -->
+          <div class="card card-cart">
+            <div class="card-header">
+              <i class="fas fa-shopping-basket"></i> Корзина
+              <span class="cart-count" id="cart-count">0</span>
+            </div>
+            <div class="card-body">
+              <div id="cart-container"></div>
+            </div>
+          </div>
+          
+          <!-- Карточка: Итого и оплата -->
+          <div class="card card-payment">
+            <div class="card-header">
+              <i class="fas fa-calculator"></i> Расчёт
+            </div>
+            <div class="card-body">
+              
+              <!-- Итого -->
+              <div class="payment-total">
+                <div class="payment-row payment-row-main">
+                  <span>ИТОГО:</span>
+                  <strong id="payment-total">0 сом</strong>
+                </div>
+              </div>
+              
+              <!-- Оплата -->
+              <div class="form-group">
+                <label for="payment-amount">Сумма оплаты</label>
+                <input 
+                  type="number" 
+                  id="payment-amount" 
+                  class="form-control form-control-lg" 
+                  placeholder="0.00" 
+                  step="0.01"
+                  min="0">
+              </div>
+              
+              <!-- Кнопка "Использовать переплату" -->
+              <button 
+                class="btn btn-success btn-block" 
+                id="use-overpayment-btn" 
+                style="display: none;">
+                <i class="fas fa-wallet"></i> Использовать переплату
+              </button>
+              
+              <!-- Результаты расчёта -->
+              <div id="payment-result" style="display: none;">
+                <div class="payment-result-info">
+                  <div class="payment-row" id="payment-debt-row" style="display: none;">
+                    <span>Долг:</span>
+                    <strong class="text-danger" id="payment-debt">0 сом</strong>
+                  </div>
+                  <div class="payment-row" id="payment-overpayment-row" style="display: none;">
+                    <span>Переплата:</span>
+                    <strong class="text-success" id="payment-overpayment">0 сом</strong>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Кнопка продажи -->
+              <button class="btn btn-primary btn-lg btn-block" id="complete-sale-btn" disabled>
+                <i class="fas fa-check"></i> Продать и напечатать чек
+              </button>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  <!-- Скрипты - Core -->
+  <script src="../js/config.js"></script>
+  <script src="../js/utils.js"></script>
+  <script src="../js/core/storage.js"></script>
+  <script src="../js/core/api.js"></script>
+  <script src="../js/core/auth.js"></script>
+  <script src="../js/core/router.js"></script>
+  
+  <!-- Скрипты - Components -->
+  <script type="module" src="../js/components/Toast.js"></script>
+  <script type="module" src="../js/components/Loader.js"></script>
+  <script type="module" src="../js/components/Modal.js"></script>
+  <script type="module" src="../js/components/DataTable.js"></script>
+  <script type="module" src="../js/components/SearchSelect.js"></script>
+  <script type="module" src="../js/components/Cart.js"></script>
+  <script type="module" src="../js/components/Print.js"></script>
+  
+  <!-- Скрипты - Services -->
+  <script type="module" src="../js/services/clients.service.js"></script>
+  <script type="module" src="../js/services/products.service.js"></script>
+  <script type="module" src="../js/services/sales.service.js"></script>
+  <script type="module" src="../js/services/payments.service.js"></script>
+  
+  <!-- Скрипты - Логика страницы -->
+  <script type="module" src="../js/pages/sales.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,1547 @@
+[07-Nov-2025 07:36:11 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php:14
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php(225): AuthController->__construct()
+#1 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php on line 14
+[08-Nov-2025 14:38:33 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php:14
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php(225): AuthController->__construct()
+#1 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php on line 14
+[08-Nov-2025 14:39:46 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php:14
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php(225): AuthController->__construct()
+#1 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php on line 14
+[08-Nov-2025 14:40:15 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php:14
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php(225): AuthController->__construct()
+#1 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php on line 14
+[08-Nov-2025 14:40:24 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php:14
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php(225): AuthController->__construct()
+#1 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php on line 14
+[08-Nov-2025 14:41:30 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php:14
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php(225): AuthController->__construct()
+#1 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php on line 14
+[08-Nov-2025 14:41:35 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php:14
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php(225): AuthController->__construct()
+#1 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php on line 14
+[08-Nov-2025 14:46:59 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/test.php:49
+Stack trace:
+#0 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/test.php on line 49
+[08-Nov-2025 14:47:40 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/test.php:49
+Stack trace:
+#0 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/test.php on line 49
+[08-Nov-2025 14:47:41 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/test.php:49
+Stack trace:
+#0 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/test.php on line 49
+[08-Nov-2025 14:47:42 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/test.php:49
+Stack trace:
+#0 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/test.php on line 49
+[08-Nov-2025 14:47:44 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/test.php:49
+Stack trace:
+#0 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/test.php on line 49
+[08-Nov-2025 14:48:14 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/test.php:49
+Stack trace:
+#0 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/test.php on line 49
+[08-Nov-2025 14:48:15 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/test.php:49
+Stack trace:
+#0 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/test.php on line 49
+[08-Nov-2025 14:49:29 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/test.php:49
+Stack trace:
+#0 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/test.php on line 49
+[08-Nov-2025 14:51:22 Asia/Bishkek] PHP Parse error:  syntax error, unexpected end of file in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php on line 123
+[08-Nov-2025 14:51:26 Asia/Bishkek] PHP Parse error:  syntax error, unexpected end of file in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php on line 123
+[08-Nov-2025 14:53:45 Asia/Bishkek] PHP Parse error:  syntax error, unexpected end of file in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php on line 123
+[08-Nov-2025 14:53:53 Asia/Bishkek] PHP Parse error:  syntax error, unexpected end of file in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php on line 123
+[08-Nov-2025 14:53:55 Asia/Bishkek] PHP Parse error:  syntax error, unexpected end of file in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php on line 123
+[08-Nov-2025 14:54:00 Asia/Bishkek] PHP Parse error:  syntax error, unexpected end of file in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php on line 123
+[08-Nov-2025 14:54:02 Asia/Bishkek] PHP Parse error:  syntax error, unexpected end of file in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php on line 123
+[08-Nov-2025 14:54:51 Asia/Bishkek] PHP Parse error:  syntax error, unexpected end of file in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php on line 123
+[08-Nov-2025 20:43:17 Asia/Bishkek] JWT: No token found in request
+[08-Nov-2025 20:43:24 Asia/Bishkek] JWT: No token found in request
+[08-Nov-2025 20:46:00 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:46:00 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:46:03 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:46:03 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:46:04 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:46:04 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:46:05 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:46:05 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:46:05 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 20:46:05 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 20:46:14 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:46:14 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:46:14 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 20:46:14 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 20:46:15 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:46:15 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:46:16 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:46:16 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:46:16 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_detailed 
+             WHERE id IN (SELECT id FROM sales s WHERE s.deleted_at IS NULL ORDER BY created_at DESC LIMIT ? OFFSET ?)
+             ORDER BY created_at DESC
+[08-Nov-2025 20:46:16 Asia/Bishkek] Sales API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 20:46:18 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:46:18 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:46:18 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:46:18 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:46:19 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:46:19 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:46:20 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:46:20 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:46:21 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:46:21 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:46:21 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_detailed 
+             WHERE id IN (SELECT id FROM sales s WHERE s.deleted_at IS NULL ORDER BY created_at DESC LIMIT ? OFFSET ?)
+             ORDER BY created_at DESC
+[08-Nov-2025 20:46:21 Asia/Bishkek] Sales API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 20:46:37 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:46:37 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:46:37 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 20:46:37 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 20:46:45 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:46:45 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:46:55 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:46:55 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:46:56 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:46:56 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:48:41 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:48:41 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:48:42 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:48:42 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:48:42 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 20:48:42 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 20:49:07 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:49:07 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:49:07 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 20:49:07 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 20:49:08 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:49:08 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:49:22 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:49:22 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:49:23 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:49:23 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:49:23 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 20:49:23 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 20:49:26 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:49:26 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:50:07 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:50:07 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:50:07 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 20:50:07 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 20:50:09 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:50:09 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:50:09 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 20:50:09 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 20:50:10 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:50:10 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:50:11 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:50:11 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:50:11 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 20:50:11 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 20:50:23 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:50:23 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:50:23 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 20:50:23 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 20:50:24 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:50:24 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:50:26 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:50:26 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:50:26 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 20:50:26 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 20:50:27 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:50:27 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:50:27 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 20:50:27 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 20:50:28 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:50:28 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:50:28 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_detailed 
+             WHERE id IN (SELECT id FROM sales s WHERE s.deleted_at IS NULL ORDER BY created_at DESC LIMIT ? OFFSET ?)
+             ORDER BY created_at DESC
+[08-Nov-2025 20:50:28 Asia/Bishkek] Sales API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 20:50:38 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:50:38 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:50:38 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_detailed 
+             WHERE id IN (SELECT id FROM sales s WHERE s.deleted_at IS NULL ORDER BY created_at DESC LIMIT ? OFFSET ?)
+             ORDER BY created_at DESC
+[08-Nov-2025 20:50:38 Asia/Bishkek] Sales API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 20:50:39 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:50:39 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:50:50 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:50:50 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:51:03 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:51:03 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:51:03 Asia/Bishkek] JWT: Token found, length: 303
+[08-Nov-2025 20:51:03 Asia/Bishkek] JWT: Token decoded successfully for user: 1
+[08-Nov-2025 20:51:03 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 20:51:03 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 20:56:24 Asia/Bishkek] PHP Warning:  require_once(classes/Auth.php): failed to open stream: No such file or directory in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php on line 7
+[08-Nov-2025 20:56:24 Asia/Bishkek] PHP Fatal error:  require_once(): Failed opening required 'classes/Auth.php' (include_path='.:/opt/php74/share/pear') in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php on line 7
+[08-Nov-2025 20:56:25 Asia/Bishkek] PHP Warning:  require_once(classes/Auth.php): failed to open stream: No such file or directory in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php on line 7
+[08-Nov-2025 20:56:25 Asia/Bishkek] PHP Fatal error:  require_once(): Failed opening required 'classes/Auth.php' (include_path='.:/opt/php74/share/pear') in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/auth.php on line 7
+[08-Nov-2025 20:56:26 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/clients.php(21): Middleware::requirePermission('clients.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/clients.php(378): ClientsController->index()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 20:56:27 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/products.php(21): Middleware::requirePermission('products.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/products.php(172): ProductsController->index()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 20:57:27 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/clients.php(21): Middleware::requirePermission('clients.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/clients.php(378): ClientsController->index()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 20:57:28 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/products.php(21): Middleware::requirePermission('products.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/products.php(172): ProductsController->index()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 20:57:29 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/products.php(139): Middleware::requirePermission('products.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/products.php(188): ProductsController->stock()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 20:57:30 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/clients.php(21): Middleware::requirePermission('clients.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/clients.php(378): ClientsController->index()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 20:57:36 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/clients.php(21): Middleware::requirePermission('clients.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/clients.php(378): ClientsController->index()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 20:57:36 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/products.php(21): Middleware::requirePermission('products.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/products.php(172): ProductsController->index()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 20:57:37 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/products.php(139): Middleware::requirePermission('products.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/products.php(188): ProductsController->stock()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 20:57:37 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/reports.php(21): Middleware::requirePermission('reports.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/reports.php(403): ReportsController->summary()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 20:58:57 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/clients.php(21): Middleware::requirePermission('clients.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/clients.php(378): ClientsController->index()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 20:58:58 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/products.php(21): Middleware::requirePermission('products.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/products.php(172): ProductsController->index()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 20:59:00 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/products.php(139): Middleware::requirePermission('products.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/products.php(188): ProductsController->stock()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 20:59:00 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(21): Middleware::requirePermission('sales.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(293): SalesController->index()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 20:59:02 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/reports.php(21): Middleware::requirePermission('reports.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/reports.php(403): ReportsController->summary()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 20:59:02 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/reports.php(265): Middleware::requirePermission('reports.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/reports.php(418): ReportsController->debtors()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 21:03:57 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/clients.php(21): Middleware::requirePermission('clients.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/clients.php(378): ClientsController->index()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 21:04:10 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Class 'Auth' not found in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php:9
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php(32): Middleware::requireAuth()
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/products.php(21): Middleware::requirePermission('products.view')
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/products.php(172): ProductsController->index()
+#3 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Middleware.php on line 9
+[08-Nov-2025 21:09:09 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:09:09 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:09:19 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:09:19 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:13:18 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:13:18 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:13:25 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:13:25 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:17:03 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:17:03 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:17:05 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 21:17:05 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:17:13 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_detailed 
+             WHERE id IN (SELECT id FROM sales s WHERE s.deleted_at IS NULL ORDER BY created_at DESC LIMIT ? OFFSET ?)
+             ORDER BY created_at DESC
+[08-Nov-2025 21:17:13 Asia/Bishkek] Sales API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:18:18 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:18:18 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:18:24 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 21:18:24 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:18:30 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 21:18:30 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:18:31 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_detailed 
+             WHERE id IN (SELECT id FROM sales s WHERE s.deleted_at IS NULL ORDER BY created_at DESC LIMIT ? OFFSET ?)
+             ORDER BY created_at DESC
+[08-Nov-2025 21:18:31 Asia/Bishkek] Sales API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:19:13 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:19:13 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:19:15 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 21:19:15 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:19:19 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 21:19:19 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:19:19 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:19:19 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:20:26 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:20:26 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:20:42 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 21:20:42 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:20:49 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 21:20:49 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:21:35 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 21:21:35 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:21:36 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_detailed 
+             WHERE id IN (SELECT id FROM sales s WHERE s.deleted_at IS NULL ORDER BY created_at DESC LIMIT ? OFFSET ?)
+             ORDER BY created_at DESC
+[08-Nov-2025 21:21:36 Asia/Bishkek] Sales API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:21:53 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_detailed 
+             WHERE id IN (SELECT id FROM sales s WHERE s.deleted_at IS NULL ORDER BY created_at DESC LIMIT ? OFFSET ?)
+             ORDER BY created_at DESC
+[08-Nov-2025 21:21:53 Asia/Bishkek] Sales API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:25:53 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:25:53 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:25:54 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 21:25:54 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:26:00 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_detailed 
+             WHERE id IN (SELECT id FROM sales s WHERE s.deleted_at IS NULL ORDER BY created_at DESC LIMIT ? OFFSET ?)
+             ORDER BY created_at DESC
+[08-Nov-2025 21:26:00 Asia/Bishkek] Sales API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:32:22 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:32:22 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:32:24 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:32:24 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:32:28 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:32:28 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:35:16 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:35:16 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:35:23 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:35:23 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:35:39 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:35:39 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:35:43 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 21:35:43 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:35:49 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:35:49 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:38:29 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:38:29 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:38:31 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 21:38:31 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:38:41 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances 
+             WHERE id IN (SELECT id FROM clients c WHERE c.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY name
+[08-Nov-2025 21:38:41 Asia/Bishkek] Clients API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:44:03 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 21:44:03 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:44:11 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 21:44:11 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:44:18 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM stock_summary 
+             WHERE product_id IN (SELECT id FROM products p WHERE p.deleted_at IS NULL ORDER BY name LIMIT ? OFFSET ?)
+             ORDER BY product_name
+[08-Nov-2025 21:44:18 Asia/Bishkek] Products API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 21:45:07 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_detailed 
+             WHERE id IN (SELECT id FROM sales s WHERE s.deleted_at IS NULL ORDER BY created_at DESC LIMIT ? OFFSET ?)
+             ORDER BY created_at DESC
+[08-Nov-2025 21:45:07 Asia/Bishkek] Sales API error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[08-Nov-2025 23:41:08 Asia/Bishkek] PHP Warning:  require_once(database.php): failed to open stream: No such file or directory in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php on line 8
+[08-Nov-2025 23:41:08 Asia/Bishkek] PHP Fatal error:  require_once(): Failed opening required 'database.php' (include_path='.:/opt/php74/share/pear') in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php on line 8
+[08-Nov-2025 23:41:45 Asia/Bishkek] PHP Notice:  Undefined variable: pdo in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php on line 13
+[08-Nov-2025 23:41:45 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php:32
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(13): getSales(NULL)
+#1 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php on line 32
+[08-Nov-2025 23:42:53 Asia/Bishkek] PHP Notice:  Undefined variable: pdo in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php on line 13
+[08-Nov-2025 23:42:53 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php:32
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(13): getSales(NULL)
+#1 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php on line 32
+[08-Nov-2025 23:43:17 Asia/Bishkek] PHP Notice:  Undefined variable: pdo in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php on line 16
+[08-Nov-2025 23:43:17 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on null in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php:75
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(16): createSale(NULL)
+#1 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php on line 75
+[08-Nov-2025 23:43:24 Asia/Bishkek] PHP Notice:  Undefined variable: pdo in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php on line 13
+[08-Nov-2025 23:43:24 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php:32
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(13): getSales(NULL)
+#1 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php on line 32
+[08-Nov-2025 23:44:38 Asia/Bishkek] PHP Notice:  Undefined variable: pdo in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php on line 33
+[08-Nov-2025 23:44:38 Asia/Bishkek] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php:59
+Stack trace:
+#0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(33): getSales(NULL)
+#1 {main}
+  thrown in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php on line 59
+[09-Nov-2025 00:07:59 Asia/Bishkek] Query error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '000003' for key 'sales.receipt_number' SQL: INSERT INTO sales (receipt_number, client_id, user_id, total, paid, debt, new_overpayment) 
+                 VALUES (?, ?, ?, ?, ?, ?, ?)
+[09-Nov-2025 00:07:59 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '000003' for key 'sales.receipt_number'
+[09-Nov-2025 00:08:04 Asia/Bishkek] Query error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '000003' for key 'sales.receipt_number' SQL: INSERT INTO sales (receipt_number, client_id, user_id, total, paid, debt, new_overpayment) 
+                 VALUES (?, ?, ?, ?, ?, ?, ?)
+[09-Nov-2025 00:08:04 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '000003' for key 'sales.receipt_number'
+[09-Nov-2025 00:08:20 Asia/Bishkek] Query error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '000003' for key 'sales.receipt_number' SQL: INSERT INTO sales (receipt_number, client_id, user_id, total, paid, debt, new_overpayment) 
+                 VALUES (?, ?, ?, ?, ?, ?, ?)
+[09-Nov-2025 00:08:20 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '000003' for key 'sales.receipt_number'
+[09-Nov-2025 00:09:27 Asia/Bishkek] Query error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '000004' for key 'sales.receipt_number' SQL: INSERT INTO sales (receipt_number, client_id, user_id, total, paid, debt, new_overpayment) 
+                 VALUES (?, ?, ?, ?, ?, ?, ?)
+[09-Nov-2025 00:09:27 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '000004' for key 'sales.receipt_number'
+[09-Nov-2025 00:09:52 Asia/Bishkek] Query error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '000004' for key 'sales.receipt_number' SQL: INSERT INTO sales (receipt_number, client_id, user_id, total, paid, debt, new_overpayment) 
+                 VALUES (?, ?, ?, ?, ?, ?, ?)
+[09-Nov-2025 00:09:52 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '000004' for key 'sales.receipt_number'
+[09-Nov-2025 09:05:24 Asia/Bishkek] Raw input: {"client_id":4,"items":[{"product_id":8,"quantity":1,"price":112}],"paid":0,"used_overpayment":0}
+[09-Nov-2025 09:05:24 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 4
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 8
+                    [quantity] => 1
+                    [price] => 112
+                )
+
+        )
+
+    [paid] => 0
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 11:23:44 Asia/Bishkek] Raw input: {"client_id":1,"items":[{"product_id":2,"quantity":10,"price":200}],"paid":1500,"used_overpayment":0}
+[09-Nov-2025 11:23:44 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 1
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 10
+                    [price] => 200
+                )
+
+        )
+
+    [paid] => 1500
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 12:09:37 Asia/Bishkek] Raw input: {"client_id":2,"items":[{"product_id":2,"quantity":10,"price":200}],"paid":1800,"used_overpayment":0}
+[09-Nov-2025 12:09:37 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 2
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 10
+                    [price] => 200
+                )
+
+        )
+
+    [paid] => 1800
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 12:13:32 Asia/Bishkek] Raw input: {"client_id":5,"items":[{"product_id":2,"quantity":20,"price":520}],"paid":5000,"used_overpayment":0}
+[09-Nov-2025 12:13:32 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 5
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 20
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 5000
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 12:20:32 Asia/Bishkek] Raw input: {"client_id":5,"items":[{"product_id":1,"quantity":1,"price":191}],"paid":200,"used_overpayment":0}
+[09-Nov-2025 12:20:32 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 5
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 1
+                    [quantity] => 1
+                    [price] => 191
+                )
+
+        )
+
+    [paid] => 200
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 12:20:32 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value SQL: INSERT INTO client_overpayments (client_id, sale_id, type, amount, user_id) 
+                     VALUES (?, ?, 'created', ?, ?)
+[09-Nov-2025 12:20:32 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value
+[09-Nov-2025 12:20:32 Asia/Bishkek] Stack trace: #0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php(70): Database->query('INSERT INTO cli...', Array)
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(253): Database->insert('INSERT INTO cli...', Array)
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(443): SalesController->create()
+#3 {main}
+[09-Nov-2025 16:44:00 Asia/Bishkek] Raw input: {"client_id":2,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":400,"used_overpayment":0}
+[09-Nov-2025 16:44:00 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 2
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 400
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 16:53:30 Asia/Bishkek] Raw input: {"client_id":1,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":1000,"used_overpayment":0}
+[09-Nov-2025 16:53:30 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 1
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 1000
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 16:53:30 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value SQL: INSERT INTO client_overpayments (client_id, sale_id, type, amount, user_id) 
+                     VALUES (?, ?, 'created', ?, ?)
+[09-Nov-2025 16:53:30 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value
+[09-Nov-2025 16:53:30 Asia/Bishkek] Stack trace: #0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php(70): Database->query('INSERT INTO cli...', Array)
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(253): Database->insert('INSERT INTO cli...', Array)
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(443): SalesController->create()
+#3 {main}
+[09-Nov-2025 16:53:36 Asia/Bishkek] Raw input: {"client_id":1,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":1000,"used_overpayment":0}
+[09-Nov-2025 16:53:36 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 1
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 1000
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 16:53:36 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value SQL: INSERT INTO client_overpayments (client_id, sale_id, type, amount, user_id) 
+                     VALUES (?, ?, 'created', ?, ?)
+[09-Nov-2025 16:53:36 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value
+[09-Nov-2025 16:53:36 Asia/Bishkek] Stack trace: #0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php(70): Database->query('INSERT INTO cli...', Array)
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(253): Database->insert('INSERT INTO cli...', Array)
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(443): SalesController->create()
+#3 {main}
+[09-Nov-2025 16:53:40 Asia/Bishkek] Raw input: {"client_id":1,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":1000,"used_overpayment":0}
+[09-Nov-2025 16:53:40 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 1
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 1000
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 16:53:40 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value SQL: INSERT INTO client_overpayments (client_id, sale_id, type, amount, user_id) 
+                     VALUES (?, ?, 'created', ?, ?)
+[09-Nov-2025 16:53:40 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value
+[09-Nov-2025 16:53:40 Asia/Bishkek] Stack trace: #0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php(70): Database->query('INSERT INTO cli...', Array)
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(253): Database->insert('INSERT INTO cli...', Array)
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(443): SalesController->create()
+#3 {main}
+[09-Nov-2025 17:06:06 Asia/Bishkek] Raw input: {"client_id":2,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":1000,"used_overpayment":0}
+[09-Nov-2025 17:06:06 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 2
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 1000
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 17:06:06 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value SQL: INSERT INTO client_overpayments (client_id, sale_id, type, amount, user_id) 
+                     VALUES (?, ?, 'created', ?, ?)
+[09-Nov-2025 17:06:06 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value
+[09-Nov-2025 17:06:06 Asia/Bishkek] Stack trace: #0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php(70): Database->query('INSERT INTO cli...', Array)
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(253): Database->insert('INSERT INTO cli...', Array)
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(443): SalesController->create()
+#3 {main}
+[09-Nov-2025 17:06:41 Asia/Bishkek] Raw input: {"client_id":2,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":200,"used_overpayment":0}
+[09-Nov-2025 17:06:41 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 2
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 200
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 17:07:14 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 17:08:08 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 17:14:47 Asia/Bishkek] Raw input: {"client_id":1,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":1000,"used_overpayment":0}
+[09-Nov-2025 17:14:47 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 1
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 1000
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 17:14:47 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value SQL: INSERT INTO client_overpayments (client_id, sale_id, type, amount, user_id) 
+                     VALUES (?, ?, 'created', ?, ?)
+[09-Nov-2025 17:14:47 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value
+[09-Nov-2025 17:14:47 Asia/Bishkek] Stack trace: #0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php(70): Database->query('INSERT INTO cli...', Array)
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(253): Database->insert('INSERT INTO cli...', Array)
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(443): SalesController->create()
+#3 {main}
+[09-Nov-2025 17:14:59 Asia/Bishkek] Raw input: {"client_id":1,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":100,"used_overpayment":0}
+[09-Nov-2025 17:14:59 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 1
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 100
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 17:15:08 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 17:15:42 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 17:23:46 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 17:24:14 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 17:24:41 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 17:24:54 Asia/Bishkek] Raw input: {"client_id":2,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":1000,"used_overpayment":0}
+[09-Nov-2025 17:24:54 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 2
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 1000
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 17:24:54 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value SQL: INSERT INTO client_overpayments (client_id, sale_id, type, amount, user_id) 
+                     VALUES (?, ?, 'created', ?, ?)
+[09-Nov-2025 17:24:54 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value
+[09-Nov-2025 17:24:54 Asia/Bishkek] Stack trace: #0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php(70): Database->query('INSERT INTO cli...', Array)
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(253): Database->insert('INSERT INTO cli...', Array)
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(443): SalesController->create()
+#3 {main}
+[09-Nov-2025 17:44:20 Asia/Bishkek] Raw input: {"client_id":2,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":200,"used_overpayment":0}
+[09-Nov-2025 17:44:20 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 2
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 200
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 17:51:58 Asia/Bishkek] Raw input: {"client_id":5,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":500,"used_overpayment":0}
+[09-Nov-2025 17:51:58 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 5
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 500
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 17:52:09 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 21:14:19 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 21:14:53 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 21:23:47 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 21:23:58 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 21:24:29 Asia/Bishkek] Raw input: {"client_id":2,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":100,"used_overpayment":0}
+[09-Nov-2025 21:24:29 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 2
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 100
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 21:24:35 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 21:24:54 Asia/Bishkek] Raw input: {"client_id":2,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":100,"used_overpayment":0}
+[09-Nov-2025 21:24:54 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 2
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 100
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 21:25:01 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 21:25:10 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 21:25:16 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 21:25:54 Asia/Bishkek] Raw input: {"client_id":2,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":100,"used_overpayment":0}
+[09-Nov-2025 21:25:54 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 2
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 100
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 21:26:04 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 21:27:10 Asia/Bishkek] Raw input: {"client_id":5,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":1000,"used_overpayment":0}
+[09-Nov-2025 21:27:10 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 5
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 1000
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 21:27:10 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value SQL: INSERT INTO client_overpayments (client_id, sale_id, type, amount, user_id) 
+                     VALUES (?, ?, 'created', ?, ?)
+[09-Nov-2025 21:27:10 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value
+[09-Nov-2025 21:27:10 Asia/Bishkek] Stack trace: #0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php(70): Database->query('INSERT INTO cli...', Array)
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(253): Database->insert('INSERT INTO cli...', Array)
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(443): SalesController->create()
+#3 {main}
+[09-Nov-2025 21:27:53 Asia/Bishkek] Raw input: {"client_id":5,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":100,"used_overpayment":0}
+[09-Nov-2025 21:27:53 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 5
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 100
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 21:28:06 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 21:28:20 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 22:01:37 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 22:01:47 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 22:01:55 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 22:02:15 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 22:02:22 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 22:02:51 Asia/Bishkek] Raw input: {"client_id":2,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":1000,"used_overpayment":0}
+[09-Nov-2025 22:02:51 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 2
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 1000
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 22:02:51 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value SQL: INSERT INTO client_overpayments (client_id, sale_id, type, amount, user_id) 
+                     VALUES (?, ?, 'created', ?, ?)
+[09-Nov-2025 22:02:51 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value
+[09-Nov-2025 22:02:51 Asia/Bishkek] Stack trace: #0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php(70): Database->query('INSERT INTO cli...', Array)
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(253): Database->insert('INSERT INTO cli...', Array)
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(443): SalesController->create()
+#3 {main}
+[09-Nov-2025 22:12:25 Asia/Bishkek] Raw input: {"client_id":2,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":1000,"used_overpayment":0}
+[09-Nov-2025 22:12:25 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 2
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 1000
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 22:12:25 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value SQL: INSERT INTO client_overpayments (client_id, sale_id, type, amount, user_id) 
+                     VALUES (?, ?, 'created', ?, ?)
+[09-Nov-2025 22:12:25 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 1364 Field 'balance_after' doesn't have a default value
+[09-Nov-2025 22:12:25 Asia/Bishkek] Stack trace: #0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php(70): Database->query('INSERT INTO cli...', Array)
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(253): Database->insert('INSERT INTO cli...', Array)
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(443): SalesController->create()
+#3 {main}
+[09-Nov-2025 22:32:04 Asia/Bishkek] Raw input: {"client_id":2,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":1000,"used_overpayment":0}
+[09-Nov-2025 22:32:04 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 2
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 1000
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 22:39:57 Asia/Bishkek] Raw input: {"client_id":2,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":1000,"used_overpayment":0}
+[09-Nov-2025 22:39:57 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 2
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 1000
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 22:40:17 Asia/Bishkek] Raw input: {"client_id":2,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":100,"used_overpayment":0}
+[09-Nov-2025 22:40:17 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 2
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 100
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 22:40:24 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[09-Nov-2025 22:42:01 Asia/Bishkek] Raw input: {"client_id":2,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":1000,"used_overpayment":0}
+[09-Nov-2025 22:42:01 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 2
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 1000
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 22:43:33 Asia/Bishkek] Raw input: {"client_id":4,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":1000,"used_overpayment":0}
+[09-Nov-2025 22:43:33 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 4
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 1000
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 22:50:05 Asia/Bishkek] Raw input: {"client_id":2,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":1000,"used_overpayment":0}
+[09-Nov-2025 22:50:05 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 2
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 1000
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 22:51:39 Asia/Bishkek] Raw input: {"client_id":2,"items":[{"product_id":2,"quantity":1,"price":520}],"paid":0,"used_overpayment":0}
+[09-Nov-2025 22:51:39 Asia/Bishkek] Decoded data: Array
+(
+    [client_id] => 2
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [product_id] => 2
+                    [quantity] => 1
+                    [price] => 520
+                )
+
+        )
+
+    [paid] => 0
+    [used_overpayment] => 0
+)
+
+[09-Nov-2025 22:52:01 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[10-Nov-2025 13:03:15 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[10-Nov-2025 13:16:21 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[10-Nov-2025 13:33:47 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[11-Nov-2025 09:58:31 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[11-Nov-2025 10:11:04 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[11-Nov-2025 10:15:01 Asia/Bishkek] PHP Notice:  Undefined index: user_id in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php on line 97
+[12-Nov-2025 11:19:03 Asia/Bishkek] Query error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'current_overpayment' in 'field list' SQL: INSERT INTO payments (sale_id, amount, payment_method, note, user_id) 
+                 VALUES (?, ?, 'cash', 'Оплата при продаже', ?)
+[12-Nov-2025 11:19:03 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'current_overpayment' in 'field list'
+[12-Nov-2025 11:19:03 Asia/Bishkek] Stack trace: #0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php(70): Database->query('INSERT INTO pay...', Array)
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(275): Database->insert('INSERT INTO pay...', Array)
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(431): SalesController->create()
+#3 {main}
+[12-Nov-2025 11:20:19 Asia/Bishkek] Query error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'current_overpayment' in 'field list' SQL: INSERT INTO payments (sale_id, amount, payment_method, note, user_id) 
+                 VALUES (?, ?, 'cash', 'Оплата при продаже', ?)
+[12-Nov-2025 11:20:19 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'current_overpayment' in 'field list'
+[12-Nov-2025 11:20:19 Asia/Bishkek] Stack trace: #0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php(70): Database->query('INSERT INTO pay...', Array)
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(275): Database->insert('INSERT INTO pay...', Array)
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(431): SalesController->create()
+#3 {main}
+[12-Nov-2025 13:46:45 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated. SQL: UPDATE sales SET deleted_at = NOW() WHERE id = ?
+[12-Nov-2025 13:46:45 Asia/Bishkek] Sale deletion error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated.
+[12-Nov-2025 13:46:56 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated. SQL: UPDATE sales SET deleted_at = NOW() WHERE id = ?
+[12-Nov-2025 13:46:56 Asia/Bishkek] Sale deletion error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated.
+[12-Nov-2025 13:50:57 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated. SQL: UPDATE sales SET deleted_at = NOW() WHERE id = ?
+[12-Nov-2025 13:50:57 Asia/Bishkek] Sale deletion error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated.
+[12-Nov-2025 13:51:26 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated. SQL: UPDATE sales SET deleted_at = NOW() WHERE id = ?
+[12-Nov-2025 13:51:26 Asia/Bishkek] Sale deletion error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated.
+[12-Nov-2025 13:56:36 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated. SQL: UPDATE sales SET deleted_at = NOW() WHERE id = ?
+[12-Nov-2025 13:56:36 Asia/Bishkek] Sale deletion error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated.
+[12-Nov-2025 16:09:21 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated. SQL: UPDATE sales SET deleted_at = NOW() WHERE id = ?
+[12-Nov-2025 16:09:21 Asia/Bishkek] Sale deletion error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated.
+[12-Nov-2025 16:09:49 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated. SQL: UPDATE sales SET deleted_at = NOW() WHERE id = ?
+[12-Nov-2025 16:09:49 Asia/Bishkek] Sale deletion error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated.
+[12-Nov-2025 18:02:05 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated. SQL: UPDATE sales SET deleted_at = NOW() WHERE id = ?
+[12-Nov-2025 18:02:05 Asia/Bishkek] Sale deletion error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated.
+[12-Nov-2025 18:02:13 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated. SQL: UPDATE sales SET deleted_at = NOW() WHERE id = ?
+[12-Nov-2025 18:02:13 Asia/Bishkek] Sale deletion error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated.
+[12-Nov-2025 18:56:20 Asia/Bishkek] Query error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'paid' in 'field list' SQL: INSERT INTO payments (sale_id, amount, payment_method, note, user_id) 
+             VALUES (?, ?, ?, ?, ?)
+[12-Nov-2025 18:56:20 Asia/Bishkek] Payment creation error: Ошибка выполнения запроса: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'paid' in 'field list'
+[12-Nov-2025 18:56:20 Asia/Bishkek] Stack trace: #0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php(70): Database->query('INSERT INTO pay...', Array)
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php(145): Database->insert('INSERT INTO pay...', Array)
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php(292): PaymentsController->create()
+#3 {main}
+[12-Nov-2025 18:56:49 Asia/Bishkek] Query error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'paid' in 'field list' SQL: INSERT INTO payments (sale_id, amount, payment_method, note, user_id) 
+             VALUES (?, ?, ?, ?, ?)
+[12-Nov-2025 18:56:49 Asia/Bishkek] Payment creation error: Ошибка выполнения запроса: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'paid' in 'field list'
+[12-Nov-2025 18:56:49 Asia/Bishkek] Stack trace: #0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php(70): Database->query('INSERT INTO pay...', Array)
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php(145): Database->insert('INSERT INTO pay...', Array)
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/payments.php(292): PaymentsController->create()
+#3 {main}
+[12-Nov-2025 22:40:43 Asia/Bishkek] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/OverpaymentService.php on line 35
+[12-Nov-2025 22:40:46 Asia/Bishkek] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/OverpaymentService.php on line 35
+[12-Nov-2025 22:40:52 Asia/Bishkek] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/OverpaymentService.php on line 35
+[12-Nov-2025 22:41:19 Asia/Bishkek] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/OverpaymentService.php on line 35
+[12-Nov-2025 22:41:32 Asia/Bishkek] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/OverpaymentService.php on line 35
+[12-Nov-2025 22:42:16 Asia/Bishkek] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/OverpaymentService.php on line 35
+[12-Nov-2025 22:42:18 Asia/Bishkek] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/OverpaymentService.php on line 35
+[12-Nov-2025 22:42:18 Asia/Bishkek] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/OverpaymentService.php on line 35
+[12-Nov-2025 22:52:50 Asia/Bishkek] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/OverpaymentService.php on line 35
+[12-Nov-2025 22:52:55 Asia/Bishkek] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/OverpaymentService.php on line 35
+[12-Nov-2025 23:07:38 Asia/Bishkek] Payment data received: {"sale_id":115,"amount":1,"payment_method":"cash","note":""}
+[12-Nov-2025 23:07:38 Asia/Bishkek] Processing regular payment: cash
+[12-Nov-2025 23:07:38 Asia/Bishkek] Payment created with ID: 100
+[12-Nov-2025 23:08:18 Asia/Bishkek] Payment data received: {"sale_id":117,"amount":1,"payment_method":"cash","note":""}
+[12-Nov-2025 23:08:18 Asia/Bishkek] Processing regular payment: cash
+[12-Nov-2025 23:08:18 Asia/Bishkek] Payment created with ID: 102
+[12-Nov-2025 23:30:36 Asia/Bishkek] Payment data received: {"sale_id":117,"amount":1,"payment_method":"cash","note":""}
+[12-Nov-2025 23:30:36 Asia/Bishkek] Processing regular payment: cash
+[12-Nov-2025 23:30:36 Asia/Bishkek] Payment created with ID: 103
+[15-Nov-2025 19:00:17 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated. SQL: UPDATE sales SET deleted_at = NOW() WHERE id = ?
+[15-Nov-2025 19:00:17 Asia/Bishkek] Sale deletion error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated.
+[15-Nov-2025 19:00:20 Asia/Bishkek] Query error: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated. SQL: UPDATE sales SET deleted_at = NOW() WHERE id = ?
+[15-Nov-2025 19:00:20 Asia/Bishkek] Sale deletion error: Ошибка выполнения запроса: SQLSTATE[HY000]: General error: 3819 Check constraint 'chk_balance_nonnegative' is violated.
+[16-Nov-2025 11:50:35 Asia/Bishkek] Query error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'used_overpayment' in 'field list' SQL: INSERT INTO sales (receipt_number, client_id, user_id, total, paid, debt, used_overpayment) 
+             VALUES (?, ?, ?, ?, 0, ?, ?)
+[16-Nov-2025 11:50:35 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'used_overpayment' in 'field list'
+[16-Nov-2025 11:50:35 Asia/Bishkek] Stack trace: #0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php(70): Database->query('INSERT INTO sal...', Array)
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(252): Database->insert('INSERT INTO sal...', Array)
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(431): SalesController->create()
+#3 {main}
+[16-Nov-2025 11:50:41 Asia/Bishkek] Query error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'used_overpayment' in 'field list' SQL: INSERT INTO sales (receipt_number, client_id, user_id, total, paid, debt, used_overpayment) 
+             VALUES (?, ?, ?, ?, 0, ?, ?)
+[16-Nov-2025 11:50:41 Asia/Bishkek] Sale creation error: Ошибка выполнения запроса: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'used_overpayment' in 'field list'
+[16-Nov-2025 11:50:41 Asia/Bishkek] Stack trace: #0 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/classes/Database.php(70): Database->query('INSERT INTO sal...', Array)
+#1 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(252): Database->insert('INSERT INTO sal...', Array)
+#2 /var/www/user2014/data/www/obmensuzak.com.kg/han/api/sales.php(431): SalesController->create()
+#3 {main}
+[16-Nov-2025 14:42:42 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 14:42:42 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 14:43:10 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 14:43:10 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 14:43:32 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 14:43:32 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 14:43:43 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 14:43:43 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 14:57:12 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 14:57:12 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 14:57:21 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 14:57:21 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 15:07:27 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 15:07:27 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 15:07:46 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 15:07:46 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 17:45:31 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances
+                 WHERE id IN (
+                     SELECT id FROM clients c
+                     WHERE c.deleted_at IS NULL
+                     ORDER BY c.name
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 17:45:31 Asia/Bishkek] Clients index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 17:45:31 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 17:45:31 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 17:46:01 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances
+                 WHERE id IN (
+                     SELECT id FROM clients c
+                     WHERE c.deleted_at IS NULL
+                     ORDER BY c.name
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 17:46:01 Asia/Bishkek] Clients index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 17:46:01 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 17:46:01 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 18:35:08 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances
+                 WHERE id IN (
+                     SELECT id FROM clients c
+                     WHERE c.deleted_at IS NULL
+                     ORDER BY c.name
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 18:35:08 Asia/Bishkek] Clients index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 18:35:08 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 18:35:08 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 19:53:56 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances
+                 WHERE id IN (
+                     SELECT id FROM clients c
+                     WHERE c.deleted_at IS NULL
+                     ORDER BY c.name
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 19:53:56 Asia/Bishkek] Clients index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 19:53:56 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 19:53:56 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 19:54:08 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL AND s.client_id = ?
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 19:54:08 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 19:54:17 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances
+                 WHERE id IN (
+                     SELECT id FROM clients c
+                     WHERE c.deleted_at IS NULL
+                     ORDER BY c.name
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 19:54:17 Asia/Bishkek] Clients index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 19:54:17 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 19:54:17 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 23:03:23 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances
+             WHERE id IN (
+                 SELECT id FROM clients c
+                 WHERE c.deleted_at IS NULL
+                 ORDER BY c.name
+                 LIMIT ? OFFSET ?
+             )
+[16-Nov-2025 23:03:23 Asia/Bishkek] Clients index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 23:03:23 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 23:03:23 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 23:04:55 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances
+             WHERE id IN (
+                 SELECT id FROM clients c
+                 WHERE c.deleted_at IS NULL
+                 ORDER BY c.name
+                 LIMIT ? OFFSET ?
+             )
+[16-Nov-2025 23:04:55 Asia/Bishkek] Clients index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 23:04:55 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 23:04:55 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 23:06:01 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[16-Nov-2025 23:06:01 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 23:06:01 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances
+             WHERE id IN (
+                 SELECT id FROM clients c
+                 WHERE c.deleted_at IS NULL
+                 ORDER BY c.name
+                 LIMIT ? OFFSET ?
+             )
+[16-Nov-2025 23:06:01 Asia/Bishkek] Clients index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[16-Nov-2025 23:06:36 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances
+             WHERE id IN (
+                 SELECT id FROM clients c
+                 WHERE c.deleted_at IS NULL
+                 ORDER BY c.name
+                 LIMIT ? OFFSET ?
+             )
+[16-Nov-2025 23:06:36 Asia/Bishkek] Clients index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[17-Nov-2025 12:11:37 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[17-Nov-2025 12:11:37 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[17-Nov-2025 12:11:37 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances
+             WHERE id IN (
+                 SELECT id FROM clients c
+                 WHERE c.deleted_at IS NULL
+                 ORDER BY c.name
+                 LIMIT ? OFFSET ?
+             )
+[17-Nov-2025 12:11:37 Asia/Bishkek] Clients index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[17-Nov-2025 16:25:47 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM sales_list
+                 WHERE id IN (
+                     SELECT id FROM sales s
+                     WHERE s.deleted_at IS NULL
+                     ORDER BY created_at DESC
+                     LIMIT ? OFFSET ?
+                 )
+[17-Nov-2025 16:25:47 Asia/Bishkek] Sales index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+[17-Nov-2025 16:25:47 Asia/Bishkek] Query error: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery' SQL: SELECT * FROM client_balances
+             WHERE id IN (
+                 SELECT id FROM clients c
+                 WHERE c.deleted_at IS NULL
+                 ORDER BY c.name
+                 LIMIT ? OFFSET ?
+             )
+[17-Nov-2025 16:25:47 Asia/Bishkek] Clients index error: Ошибка выполнения запроса: SQLSTATE[42000]: Syntax error or access violation: 1235 This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'

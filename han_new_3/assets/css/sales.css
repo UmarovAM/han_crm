@@ -1,0 +1,669 @@
+/* ========================================
+   SALES PAGE - Стили страницы продаж
+   ======================================== */
+
+/* Основной контейнер продаж */
+.sales-container {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 20px;
+    height: calc(100vh - 140px);
+    padding: 20px;
+}
+
+/* Левая панель - поиск товаров */
+.sales-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: hidden;
+}
+
+/* Правая панель - корзина */
+.sales-right {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* ============ БЛОК КЛИЕНТА ============ */
+.client-block {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.client-block h3 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.client-search-wrapper {
+    position: relative;
+}
+
+.client-search {
+    width: 100%;
+    padding: 10px 40px 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.client-search:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.client-clear-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    line-height: 1;
+}
+
+.client-clear-btn:hover {
+    color: #dc2626;
+}
+
+/* Выпадающий список клиентов */
+.client-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+    margin-top: -1px;
+}
+
+.client-option {
+    padding: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.15s;
+}
+
+.client-option:hover {
+    background: #f8f9fa;
+}
+
+.client-option:last-child {
+    border-bottom: none;
+}
+
+.client-option-name {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.client-option-phone {
+    font-size: 12px;
+    color: #666;
+}
+
+.client-option-balance {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.client-option-balance.positive {
+    color: #059669;
+}
+
+.client-option-balance.negative {
+    color: #dc2626;
+}
+
+/* Информация о выбранном клиенте */
+.selected-client-info {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #2563eb;
+}
+
+.selected-client-info h4 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.selected-client-info p {
+    margin: 4px 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.client-balance {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #e5e7eb;
+    font-weight: 600;
+}
+
+.client-balance.positive {
+    color: #059669;
+}
+
+.client-balance.negative {
+    color: #dc2626;
+}
+
+/* ============ БЛОК ТОВАРОВ ============ */
+.products-block {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.products-block h3 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.product-search-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.product-search {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.product-search:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Список товаров */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.product-card:hover {
+    border-color: #2563eb;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+    transform: translateY(-2px);
+}
+
+.product-card.out-of-stock {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.product-card.out-of-stock:hover {
+    transform: none;
+    border-color: #e5e7eb;
+    box-shadow: none;
+}
+
+.product-name {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 4px;
+}
+
+.product-stock {
+    font-size: 12px;
+    color: #666;
+}
+
+.product-stock.low {
+    color: #f59e0b;
+    font-weight: 500;
+}
+
+.product-stock.out {
+    color: #dc2626;
+    font-weight: 500;
+}
+
+/* ============ КОРЗИНА ============ */
+.cart-header {
+    padding: 20px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.cart-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.cart-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+.cart-empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+}
+
+.cart-empty svg {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    opacity: 0.3;
+}
+
+/* Элемент корзины */
+.cart-item {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.cart-item-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.cart-item-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cart-item-price {
+    font-size: 13px;
+    color: #666;
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.qty-btn {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+}
+
+.qty-btn:hover {
+    background: #f8f9fa;
+    border-color: #2563eb;
+}
+
+.qty-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.cart-item-qty {
+    min-width: 40px;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+}
+
+.cart-item-subtotal {
+    font-weight: 700;
+    color: #2563eb;
+    min-width: 80px;
+    text-align: right;
+}
+
+.cart-item-remove {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: #fee2e2;
+    color: #dc2626;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+}
+
+.cart-item-remove:hover {
+    background: #dc2626;
+    color: white;
+}
+
+/* ============ ИТОГИ ============ */
+.cart-footer {
+    padding: 20px;
+    background: #f8f9fa;
+    border-top: 1px solid #e5e7eb;
+}
+
+.cart-totals {
+    margin-bottom: 20px;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.total-row.main {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    padding-top: 12px;
+    border-top: 2px solid #ddd;
+}
+
+.total-label {
+    color: #666;
+}
+
+.total-value {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Поле оплаты */
+.payment-input-wrapper {
+    margin-bottom: 15px;
+}
+
+.payment-input-wrapper label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.payment-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.payment-input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Быстрые кнопки сумм */
+.quick-amounts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.quick-amount-btn {
+    padding: 8px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.15s;
+}
+
+.quick-amount-btn:hover {
+    background: #f8f9fa;
+    border-color: #2563eb;
+}
+
+/* Чекбокс использования переплаты */
+.use-overpayment-wrapper {
+    margin-bottom: 15px;
+    padding: 12px;
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    border-radius: 6px;
+}
+
+.use-overpayment-wrapper label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #059669;
+}
+
+.use-overpayment-wrapper input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* Информация о расчёте */
+.calculation-info {
+    margin-bottom: 15px;
+    padding: 12px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.calculation-info div {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+
+.calculation-info .label {
+    color: #666;
+}
+
+.calculation-info .value {
+    font-weight: 600;
+}
+
+.calculation-info .value.debt {
+    color: #dc2626;
+}
+
+.calculation-info .value.overpayment {
+    color: #059669;
+}
+
+/* Кнопки действий */
+.cart-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.btn-sell {
+    padding: 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-sell:hover:not(:disabled) {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.btn-sell:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-clear {
+    padding: 12px;
+    background: white;
+    color: #dc2626;
+    border: 1px solid #dc2626;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-clear:hover {
+    background: #dc2626;
+    color: white;
+}
+
+/* ============ АДАПТИВНОСТЬ ============ */
+@media (max-width: 1200px) {
+    .sales-container {
+        grid-template-columns: 1fr 350px;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .sales-container {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    
+    .sales-right {
+        max-height: 600px;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sales-container {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+    
+    .cart-item {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .cart-item-controls {
+        justify-content: space-between;
+    }
+}
+
+/* ============ СКРОЛЛБАРЫ ============ */
+.products-grid::-webkit-scrollbar,
+.cart-body::-webkit-scrollbar,
+.client-dropdown::-webkit-scrollbar {
+    width: 8px;
+}
+
+.products-grid::-webkit-scrollbar-track,
+.cart-body::-webkit-scrollbar-track,
+.client-dropdown::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.products-grid::-webkit-scrollbar-thumb,
+.cart-body::-webkit-scrollbar-thumb,
+.client-dropdown::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.products-grid::-webkit-scrollbar-thumb:hover,
+.cart-body::-webkit-scrollbar-thumb:hover,
+.client-dropdown::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}

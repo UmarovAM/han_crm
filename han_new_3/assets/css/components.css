@@ -1,0 +1,450 @@
+/* ============================================
+   COMPONENTS STYLES - HAN CRM v3.1
+   Стили для Toast, Loader, Modal и других компонентов
+   ============================================ */
+
+/* ============================================
+   TOAST - Уведомления
+   ============================================ */
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.toast {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 300px;
+  opacity: 0;
+  transform: translateX(400px);
+  transition: all 0.3s ease-out;
+}
+
+.toast.toast-show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.toast.toast-hide {
+  opacity: 0;
+  transform: translateX(400px);
+}
+
+.toast-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.toast-message {
+  flex: 1;
+  font-size: 14px;
+  color: #2d3748;
+}
+
+.toast-close {
+  background: none;
+  border: none;
+  color: #a0aec0;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 18px;
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+
+.toast-close:hover {
+  color: #718096;
+}
+
+/* Типы Toast */
+.toast-success {
+  border-left: 4px solid #38a169;
+}
+
+.toast-success .toast-icon {
+  color: #38a169;
+}
+
+.toast-error {
+  border-left: 4px solid #e53e3e;
+}
+
+.toast-error .toast-icon {
+  color: #e53e3e;
+}
+
+.toast-warning {
+  border-left: 4px solid #d69e2e;
+}
+
+.toast-warning .toast-icon {
+  color: #d69e2e;
+}
+
+.toast-info {
+  border-left: 4px solid #3182ce;
+}
+
+.toast-info .toast-icon {
+  color: #3182ce;
+}
+
+/* ============================================
+   LOADER - Индикатор загрузки
+   ============================================ */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.loader-overlay.loader-show {
+  display: flex;
+  opacity: 1;
+}
+
+.loader-content {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.loader-spinner {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 15px;
+  border: 4px solid #e2e8f0;
+  border-top-color: #667eea;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loader-text {
+  font-size: 14px;
+  color: #4a5568;
+}
+
+/* Локальный лоадер */
+.local-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.local-loader.local-loader-show {
+  opacity: 1;
+}
+
+.local-loader-content {
+  text-align: center;
+}
+
+.local-loader-spinner {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 10px;
+  border: 3px solid #e2e8f0;
+  border-top-color: #667eea;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.local-loader-text {
+  font-size: 13px;
+  color: #4a5568;
+}
+
+/* ============================================
+   MODAL - Модальные окна
+   ============================================ */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9000;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.modal-backdrop.modal-show {
+  opacity: 1;
+}
+
+.modal-backdrop.modal-show .modal {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+/* Размеры модалок */
+.modal-small { max-width: 400px; width: 100%; }
+.modal-medium { max-width: 600px; width: 100%; }
+.modal-large { max-width: 900px; width: 100%; }
+.modal-xlarge { max-width: 1200px; width: 100%; }
+
+.modal-dialog {
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+}
+
+.modal-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: #a0aec0;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 20px;
+  transition: color 0.2s;
+}
+
+.modal-close:hover {
+  color: #718096;
+}
+
+.modal-body {
+  padding: 24px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+/* Форма в модалке */
+.modal-form .form-group {
+  margin-bottom: 20px;
+}
+
+.modal-form .form-group:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================
+   BUTTONS - Кнопки
+   ============================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.btn-lg {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.btn-block {
+  width: 100%;
+  display: flex;
+}
+
+/* Цвета кнопок */
+.btn-primary {
+  background: #667eea;
+  color: #ffffff;
+  border-color: #667eea;
+}
+
+.btn-primary:hover {
+  background: #5568d3;
+  border-color: #5568d3;
+}
+
+.btn-secondary {
+  background: #e2e8f0;
+  color: #2d3748;
+  border-color: #e2e8f0;
+}
+
+.btn-secondary:hover {
+  background: #cbd5e0;
+  border-color: #cbd5e0;
+}
+
+.btn-success {
+  background: #38a169;
+  color: #ffffff;
+  border-color: #38a169;
+}
+
+.btn-success:hover {
+  background: #2f855a;
+  border-color: #2f855a;
+}
+
+.btn-danger {
+  background: #e53e3e;
+  color: #ffffff;
+  border-color: #e53e3e;
+}
+
+.btn-danger:hover {
+  background: #c53030;
+  border-color: #c53030;
+}
+
+.btn-warning {
+  background: #d69e2e;
+  color: #ffffff;
+  border-color: #d69e2e;
+}
+
+.btn-warning:hover {
+  background: #b7791f;
+  border-color: #b7791f;
+}
+
+/* ============================================
+   FORMS - Формы
+   ============================================ */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #2d3748;
+  font-size: 14px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-control:disabled {
+  background: #f7fafc;
+  cursor: not-allowed;
+}
+
+/* ============================================
+   Адаптивность
+   ============================================ */
+@media (max-width: 768px) {
+  .toast-container {
+    left: 10px;
+    right: 10px;
+    top: 10px;
+  }
+  
+  .toast {
+    min-width: 0;
+  }
+  
+  .modal {
+    max-height: 100vh;
+    border-radius: 0;
+  }
+  
+  .modal-small,
+  .modal-medium,
+  .modal-large,
+  .modal-xlarge {
+    max-width: 100%;
+  }
+}

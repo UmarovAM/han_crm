@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAN Seeds CRM v3.1</title>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Основные стили -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  
+  <!-- Стили для печати -->
+  <link rel="stylesheet" href="./assets/css/print.css" media="print">
+</head>
+<body>
+  <!-- Навигация (для авторизованных пользователей) -->
+  <div id="navigation"></div>
+  
+  <!-- Контейнер приложения -->
+  <div id="app">
+    <div class="initial-loader">
+      <i class="fas fa-spinner fa-spin fa-3x"></i>
+      <p>Загрузка...</p>
+    </div>
+  </div>
+
+  <!-- Контейнер для Toast-уведомлений -->
+  <div id="toast-container"></div>
+
+  <!-- Инициализация приложения -->
+  <script type="module" src="./js/config.js"></script>
+</body>
+</html>

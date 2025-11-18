@@ -1,0 +1,95 @@
+✅ ИТОГИ БЛОКА 2: COMPONENTS
+Создано 7 мощных компонентов:
+📦 Что готово:
+
+✅ Toast.js - Красивые уведомления (success/error/warning/info)
+✅ Loader.js - Глобальный + локальный индикатор загрузки
+✅ Modal.js - Модальные окна с формами и подтверждениями
+✅ DataTable.js - Таблица с пагинацией, сортировкой, экспортом
+✅ SearchSelect.js - Живой поиск с выбором (для клиентов/товаров)
+✅ Cart.js - Корзина покупок с автосохранением
+✅ Print.js - Печать чеков и отчётов
+
+
+🎯 КЛЮЧЕВЫЕ ВОЗМОЖНОСТИ
+🔔 Toast (уведомления):
+javascriptToast.success('Сохранено!');
+Toast.error('Ошибка сервера');
+Toast.warning('Внимание!');
+Toast.info('Информация');
+⏳ Loader:
+javascriptLoader.show('Загрузка данных...');
+await doSomething();
+Loader.hide();
+
+// Или обернуть функцию
+const wrappedFn = Loader.wrap(myAsyncFn, 'Сохранение...');
+🪟 Modal:
+javascript// Подтверждение
+const confirmed = await Modal.confirm('Удалить?');
+
+// Форма
+const data = await Modal.form({
+  title: 'Новый клиент',
+  fields: [
+    { name: 'name', type: 'text', label: 'Имя', required: true },
+    { name: 'phone', type: 'tel', label: 'Телефон' }
+  ]
+});
+📊 DataTable:
+javascriptconst table = new DataTable('my-table', {
+  columns: [
+    { key: 'id', label: 'ID' },
+    { key: 'name', label: 'Название' },
+    { key: 'price', label: 'Цена', render: (val) => Utils.formatMoney(val) }
+  ],
+  data: myData,
+  actions: [
+    { 
+      name: 'edit', 
+      text: 'Изменить', 
+      icon: 'fas fa-edit',
+      onClick: (row) => editItem(row)
+    }
+  ]
+});
+🔍 SearchSelect:
+javascriptconst clientSearch = new SearchSelect('client-input', {
+  onSearch: async (query) => {
+    const res = await ClientsService.search(query);
+    return res.data;
+  },
+  onSelect: (client) => {
+    console.log('Выбран клиент:', client);
+  }
+});
+🛒 Cart:
+javascriptconst cart = new Cart('cart-container', {
+  onUpdate: (cart) => {
+    console.log('Всего:', cart.getTotal());
+  }
+});
+
+cart.addItem(product, 2);
+cart.getTotal(); // Общая сумма
+cart.getDataForSubmit(); // Данные для API
+🖨️ Print:
+javascript// Печать чека
+Print.printReceipt(sale);
+
+// Печать отчёта
+Print.printReport('Отчёт по продажам', '<table>...</table>');
+
+📖 КАК ПОДКЛЮЧИТЬ
+В HTML:
+html<!-- После Core файлов -->
+<script src="/js/components/Toast.js"></script>
+<script src="/js/components/Loader.js"></script>
+<script src="/js/components/Modal.js"></script>
+<script src="/js/components/DataTable.js"></script>
+<script src="/js/components/SearchSelect.js"></script>
+<script src="/js/components/Cart.js"></script>
+<script src="/js/components/Print.js"></script>
+
+🎨 СТИЛИ (CSS)
+Компоненты требуют стили. Я могу создать полный components.css в следующем блоке, или сейчас дам краткий пример?
