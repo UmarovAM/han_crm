@@ -5,7 +5,7 @@
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'user2014_han');
 define('DB_USER', 'user2014_admin');
-define('DB_PASS', 'wdH3Lxb2giai'); // Замените на реальный пароль
+define('DB_PASS', ''); // Замените на реальный пароль
 
 
 define('API_VERSION', 'v1');
@@ -84,4 +84,5 @@ header('Content-Type: application/json; charset=UTF-8');
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(200);
     exit();
+
 }
