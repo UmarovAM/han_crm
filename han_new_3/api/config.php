@@ -3,8 +3,8 @@
 // Конфигурация API HAN Seeds CRM
 
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'user2014_han');
-define('DB_USER', 'user2014_admin');
+define('DB_NAME', 'user');
+define('DB_USER', 'user');
 define('DB_PASS', ''); // Замените на реальный пароль
 
 
@@ -86,3 +86,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit();
 
 }
+
