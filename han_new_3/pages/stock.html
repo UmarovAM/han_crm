@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Склад - HAN CRM</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/stock.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>🌻 HAN CRM</h1>
+        </div>
+        <div class="nav-menu">
+            <a href="dashboard.html">Главная</a>
+            <a href="sales.html">Продажи</a>
+            <a href="clients.html">Клиенты</a>
+            <a href="products.html">Товары</a>
+            <a href="production.html" data-role="manager,admin">Производство</a>
+            <a href="writeoffs.html" data-role="manager,admin">Списания</a>
+            <a href="stock.html" class="active" data-role="manager,admin">Склад</a>
+            <a href="reports.html" data-role="manager,admin">Отчёты</a>
+        </div>
+        <div class="nav-user">
+            <span id="userName">Пользователь</span>
+            <button onclick="logout()" class="btn-logout">Выход</button>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <!-- Заголовок и действия -->
+        <div class="page-header">
+            <div>
+                <h2>Управление складом</h2>
+                <p class="page-subtitle">Остатки товаров и история движений</p>
+            </div>
+            <div class="page-actions">
+                <button class="btn btn-secondary" onclick="stockPage.exportToExcel()">
+                    📊 Экспорт в Excel
+                </button>
+                <button class="btn btn-warning" onclick="stockPage.showReconciliation()" data-role="admin">
+                    🔍 Сверка остатков
+                </button>
+            </div>
+        </div>
+
+        <!-- Фильтры -->
+        <div class="filters-bar">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="🔍 Поиск товара..."
+                >
+            </div>
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">
+                    Все (<span id="countAll">0</span>)
+                </button>
+                <button class="filter-tab" data-filter="in-stock">
+                    В наличии (<span id="countInStock">0</span>)
+                </button>
+                <button class="filter-tab" data-filter="low-stock">
+                    Мало (<span id="countLowStock">0</span>)
+                </button>
+                <button class="filter-tab" data-filter="out-of-stock">
+                    Нет (<span id="countOutOfStock">0</span>)
+                </button>
+            </div>
+        </div>
+
+        <!-- Статистика -->
+        <div class="stats-cards">
+            <div class="stat-card">
+                <div class="stat-icon">📦</div>
+                <div class="stat-info">
+                    <div class="stat-label">Всего товаров</div>
+                    <div class="stat-value" id="statTotal">0</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+                <div class="stat-info">
+                    <div class="stat-label">В наличии</div>
+                    <div class="stat-value" id="statInStock">0</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⚠️</div>
+                <div class="stat-info">
+                    <div class="stat-label">Мало</div>
+                    <div class="stat-value" id="statLowStock">0</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">📊</div>
+                <div class="stat-info">
+                    <div class="stat-label">Общий остаток</div>
+                    <div class="stat-value" id="statTotalQuantity">0</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Таблица остатков -->
+        <div class="card">
+            <div class="card-header">
+                <h3>Остатки товаров</h3>
+            </div>
+            <div class="table-container">
+                <table class="data-table" id="stockTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Товар</th>
+                            <th>Цена</th>
+                            <th>Остаток</th>
+                            <th>Статус</th>
+                            <th>Последнее движение</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody id="stockTableBody">
+                        <tr>
+                            <td colspan="7" class="text-center">
+                                <div class="loader"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- История движений -->
+        <div class="card" style="margin-top: 20px;">
+            <div class="card-header">
+                <h3>История движений (последние 100)</h3>
+            </div>
+            <div class="table-container">
+                <table class="data-table" id="movementsTable">
+                    <thead>
+                        <tr>
+                            <th>Дата и время</th>
+                            <th>Товар</th>
+                            <th>Тип движения</th>
+                            <th>Изменение</th>
+                            <th>Остаток после</th>
+                            <th>Примечание</th>
+                            <th>Пользователь</th>
+                        </tr>
+                    </thead>
+                    <tbody id="movementsTableBody">
+                        <tr>
+                            <td colspan="7" class="text-center">
+                                <div class="loader"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Модальное окно: Детали товара -->
+    <div id="stockDetailsModal" class="modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3 id="stockDetailsTitle">Детали товара на складе</h3>
+                <button class="modal-close" onclick="stockPage.closeDetailsModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="stockDetailsContent">
+                    <div class="loader"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="stockPage.closeDetailsModal()">
+                    Закрыть
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно: Сверка остатков -->
+    <div id="reconciliationModal" class="modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3>Сверка остатков</h3>
+                <button class="modal-close" onclick="stockPage.closeReconciliationModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="reconciliationContent">
+                    <div class="loader"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="stockPage.closeReconciliationModal()">
+                    Закрыть
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast уведомления -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Скрипты -->
+    <script type="module" src="../js/pages/stock.js"></script>
+    <script>
+        function logout() {
+            if (confirm('Выйти из системы?')) {
+                localStorage.removeItem('auth_token');
+                localStorage.removeItem('user');
+                window.location.href = '../login.html';
+            }
+        }
+    </script>
+</body>
+</html>

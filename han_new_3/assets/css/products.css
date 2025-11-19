@@ -1,0 +1,332 @@
+/* ========================================
+   PRODUCTS PAGE - Стили страницы товаров
+   ======================================== */
+
+/* Статистика */
+.stats-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.stat-icon {
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.stat-info {
+    flex: 1;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Бейджи остатков */
+.stock-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.stock-badge.in-stock {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.stock-badge.low-stock {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.stock-badge.out-of-stock {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* Бейджи цены */
+.price-badge {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+/* Таблица товаров */
+.data-table tbody tr.inactive {
+    opacity: 0.6;
+    background: #f8f9fa;
+}
+
+/* Информационный блок в модальном окне */
+.info-box {
+    padding: 15px;
+    background: #f8f9fa;
+    border-left: 4px solid #2563eb;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.info-box h4 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.info-box p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.info-box .highlight {
+    font-weight: 600;
+    color: #2563eb;
+}
+
+.info-box .stock-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* Детали товара */
+.product-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.detail-section {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.detail-section h4 {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.detail-section p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.detail-label {
+    color: #666;
+    font-weight: 500;
+}
+
+.detail-value {
+    color: #333;
+    font-weight: 600;
+}
+
+/* История движений */
+.movements-section {
+    margin-top: 20px;
+}
+
+.movements-section h4 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.movements-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.movement-item {
+    padding: 12px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movement-info {
+    flex: 1;
+}
+
+.movement-type {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.movement-date {
+    font-size: 12px;
+    color: #999;
+}
+
+.movement-note {
+    font-size: 13px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.movement-quantity {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+    min-width: 100px;
+}
+
+.movement-quantity.increase {
+    color: #059669;
+}
+
+.movement-quantity.decrease {
+    color: #dc2626;
+}
+
+.movement-after {
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+}
+
+/* Типы движений */
+.movement-type-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.movement-type-badge.production {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.movement-type-badge.sale {
+    background: #fecaca;
+    color: #991b1b;
+}
+
+.movement-type-badge.adjustment {
+    background: #e0e7ff;
+    color: #3730a3;
+}
+
+.movement-type-badge.writeoff {
+    background: #fed7aa;
+    color: #92400e;
+}
+
+.movement-type-badge.return {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .product-details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-card {
+        padding: 15px;
+    }
+
+    .stat-icon {
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .stat-value {
+        font-size: 20px;
+    }
+
+    .movement-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .movement-quantity,
+    .movement-after {
+        text-align: left;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Скроллбар для списка движений */
+.movements-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.movements-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.movements-list::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.movements-list::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}

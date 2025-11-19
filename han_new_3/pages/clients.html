@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клиенты - HAN CRM</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/clients.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>🌻 HAN CRM</h1>
+        </div>
+        <div class="nav-menu">
+            <a href="dashboard.html">Главная</a>
+            <a href="sales.html">Продажи</a>
+            <a href="clients.html" class="active">Клиенты</a>
+            <a href="products.html">Товары</a>
+            <a href="production.html" data-role="manager,admin">Производство</a>
+            <a href="writeoffs.html" data-role="manager,admin">Списания</a>
+            <a href="stock.html" data-role="manager,admin">Склад</a>
+            <a href="reports.html" data-role="manager,admin">Отчёты</a>
+        </div>
+        <div class="nav-user">
+            <span id="userName">Пользователь</span>
+            <button onclick="logout()" class="btn-logout">Выход</button>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <!-- Заголовок и действия -->
+        <div class="page-header">
+            <div>
+                <h2>База клиентов</h2>
+                <p class="page-subtitle">Управление клиентской базой</p>
+            </div>
+            <div class="page-actions">
+                <button class="btn btn-secondary" onclick="clientsPage.exportToExcel()">
+                    📊 Экспорт в Excel
+                </button>
+                <button class="btn btn-primary" onclick="clientsPage.openCreateModal()" data-role="manager,admin">
+                    ➕ Добавить клиента
+                </button>
+            </div>
+        </div>
+
+        <!-- Фильтры и поиск -->
+        <div class="filters-bar">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="🔍 Поиск по имени или телефону..."
+                >
+            </div>
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">
+                    Все (<span id="countAll">0</span>)
+                </button>
+                <button class="filter-tab" data-filter="debtors">
+                    Должники (<span id="countDebtors">0</span>)
+                </button>
+                <button class="filter-tab" data-filter="overpayments">
+                    С переплатой (<span id="countOverpayments">0</span>)
+                </button>
+            </div>
+        </div>
+
+        <!-- Таблица клиентов -->
+        <div class="card">
+            <div class="table-container">
+                <table class="data-table" id="clientsTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Имя</th>
+                            <th>Телефон</th>
+                            <th>Адрес</th>
+                            <th>Долг</th>
+                            <th>Переплата</th>
+                            <th>Продажи</th>
+                            <th>Статус</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody id="clientsTableBody">
+                        <tr>
+                            <td colspan="9" class="text-center">
+                                <div class="loader"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Пагинация -->
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </main>
+
+    <!-- Модальное окно: Создание/Редактирование клиента -->
+    <div id="clientModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Добавить клиента</h3>
+                <button class="modal-close" onclick="clientsPage.closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="clientForm">
+                    <input type="hidden" id="clientId">
+                    
+                    <div class="form-group">
+                        <label for="clientName">Название / ФИО <span class="required">*</span></label>
+                        <input 
+                            type="text" 
+                            id="clientName" 
+                            class="form-control" 
+                            placeholder="ТОО 'Рога и Копыта' или Иванов Иван"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="clientPhone">Телефон</label>
+                        <input 
+                            type="text" 
+                            id="clientPhone" 
+                            class="form-control" 
+                            placeholder="+996 555 123 456"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="clientAddress">Адрес</label>
+                        <textarea 
+                            id="clientAddress" 
+                            class="form-control" 
+                            rows="2" 
+                            placeholder="г. Бишкек, ул. Ленина 1"
+                        ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="clientIsActive" checked>
+                            <span>Активен</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="clientsPage.closeModal()">
+                    Отмена
+                </button>
+                <button class="btn btn-primary" onclick="clientsPage.saveClient()">
+                    Сохранить
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно: Детали клиента -->
+    <div id="clientDetailsModal" class="modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3 id="clientDetailsTitle">Детали клиента</h3>
+                <button class="modal-close" onclick="clientsPage.closeDetailsModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="clientDetailsContent">
+                    <div class="loader"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="clientsPage.closeDetailsModal()">
+                    Закрыть
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно: Выдача переплаты -->
+    <div id="withdrawModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Выдать переплату</h3>
+                <button class="modal-close" onclick="clientsPage.closeWithdrawModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="withdrawClientInfo" class="info-box"></div>
+                
+                <form id="withdrawForm">
+                    <input type="hidden" id="withdrawClientId">
+                    
+                    <div class="form-group">
+                        <label for="withdrawAmount">Сумма <span class="required">*</span></label>
+                        <input 
+                            type="number" 
+                            id="withdrawAmount" 
+                            class="form-control" 
+                            step="0.01"
+                            min="0.01"
+                            placeholder="0.00"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="withdrawNote">Примечание</label>
+                        <textarea 
+                            id="withdrawNote" 
+                            class="form-control" 
+                            rows="2" 
+                            placeholder="Выдано наличными по просьбе клиента"
+                        ></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="clientsPage.closeWithdrawModal()">
+                    Отмена
+                </button>
+                <button class="btn btn-danger" onclick="clientsPage.confirmWithdraw()">
+                    Выдать
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast уведомления -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Скрипты -->
+    <script type="module" src="../js/pages/clients.js"></script>
+    <script>
+        // Глобальная функция выхода
+        function logout() {
+            if (confirm('Выйти из системы?')) {
+                localStorage.removeItem('auth_token');
+                localStorage.removeItem('user');
+                window.location.href = '../login.html';
+            }
+        }
+    </script>
+</body>
+</html>

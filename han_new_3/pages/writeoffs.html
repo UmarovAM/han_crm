@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Списания - HAN CRM</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/writeoffs.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>🌻 HAN CRM</h1>
+        </div>
+        <div class="nav-menu">
+            <a href="dashboard.html">Главная</a>
+            <a href="sales.html">Продажи</a>
+            <a href="clients.html">Клиенты</a>
+            <a href="products.html">Товары</a>
+            <a href="production.html" data-role="manager,admin">Производство</a>
+            <a href="writeoffs.html" class="active" data-role="manager,admin">Списания</a>
+            <a href="stock.html" data-role="manager,admin">Склад</a>
+            <a href="reports.html" data-role="manager,admin">Отчёты</a>
+        </div>
+        <div class="nav-user">
+            <span id="userName">Пользователь</span>
+            <button onclick="logout()" class="btn-logout">Выход</button>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <!-- Заголовок и действия -->
+        <div class="page-header">
+            <div>
+                <h2>Списания товаров</h2>
+                <p class="page-subtitle">Учёт брака, порчи и других потерь</p>
+            </div>
+            <div class="page-actions">
+                <button class="btn btn-secondary" onclick="writeoffsPage.exportToExcel()">
+                    📊 Экспорт в Excel
+                </button>
+                <button class="btn btn-danger" onclick="writeoffsPage.openCreateModal()">
+                    ➕ Списать товар
+                </button>
+            </div>
+        </div>
+
+        <!-- Фильтры -->
+        <div class="filters-panel">
+            <div class="filter-group">
+                <label>Период:</label>
+                <input type="date" id="dateFrom" class="form-control">
+                <span>—</span>
+                <input type="date" id="dateTo" class="form-control">
+            </div>
+
+            <div class="filter-group">
+                <label>Тип списания:</label>
+                <select id="typeFilter" class="form-control">
+                    <option value="">Все типы</option>
+                    <option value="defect">Брак</option>
+                    <option value="expired">Просрочка</option>
+                    <option value="damage">Повреждение</option>
+                    <option value="other">Другое</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Товар:</label>
+                <select id="productFilter" class="form-control">
+                    <option value="">Все товары</option>
+                </select>
+            </div>
+
+            <button class="btn btn-secondary" onclick="writeoffsPage.applyFilters()">
+                Применить
+            </button>
+            <button class="btn btn-secondary" onclick="writeoffsPage.resetFilters()">
+                Сбросить
+            </button>
+        </div>
+
+        <!-- Статистика -->
+        <div class="stats-cards">
+            <div class="stat-card">
+                <div class="stat-icon">📦</div>
+                <div class="stat-info">
+                    <div class="stat-label">Всего записей</div>
+                    <div class="stat-value" id="statTotal">0</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">📊</div>
+                <div class="stat-info">
+                    <div class="stat-label">Списано (шт)</div>
+                    <div class="stat-value" id="statQuantity">0</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">❌</div>
+                <div class="stat-info">
+                    <div class="stat-label">Брак</div>
+                    <div class="stat-value" id="statDefect">0</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⏰</div>
+                <div class="stat-info">
+                    <div class="stat-label">Просрочка</div>
+                    <div class="stat-value" id="statExpired">0</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Таблица списаний -->
+        <div class="card">
+            <div class="table-container">
+                <table class="data-table" id="writeoffsTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Дата и время</th>
+                            <th>Товар</th>
+                            <th>Количество</th>
+                            <th>Тип</th>
+                            <th>Причина</th>
+                            <th>Создал</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody id="writeoffsTableBody">
+                        <tr>
+                            <td colspan="8" class="text-center">
+                                <div class="loader"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Пагинация -->
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </main>
+
+    <!-- Модальное окно: Списание товара -->
+    <div id="writeoffModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Списать товар</h3>
+                <button class="modal-close" onclick="writeoffsPage.closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="writeoffForm">
+                    <div class="form-group">
+                        <label for="productSelect">Товар <span class="required">*</span></label>
+                        <div class="product-search-wrapper">
+                            <input 
+                                type="text" 
+                                id="productSearch" 
+                                class="form-control" 
+                                placeholder="Поиск товара..."
+                            >
+                            <select id="productSelect" class="form-control" required style="display: none;">
+                                <option value="">Выберите товар</option>
+                            </select>
+                        </div>
+                        <div id="productSearchResults" class="search-results"></div>
+                        <div id="selectedProductInfo" class="selected-product-info" style="display: none;"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="writeoffQuantity">Количество (шт) <span class="required">*</span></label>
+                        <input 
+                            type="number" 
+                            id="writeoffQuantity" 
+                            class="form-control" 
+                            min="1"
+                            placeholder="0"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="writeoffType">Тип списания <span class="required">*</span></label>
+                        <select id="writeoffType" class="form-control" required>
+                            <option value="">Выберите тип</option>
+                            <option value="defect">Брак производства</option>
+                            <option value="expired">Истёк срок годности</option>
+                            <option value="damage">Повреждение упаковки</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="writeoffReason">Причина <span class="required">*</span></label>
+                        <textarea 
+                            id="writeoffReason" 
+                            class="form-control" 
+                            rows="3" 
+                            placeholder="Подробное описание причины списания..."
+                            required
+                        ></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="writeoffsPage.closeModal()">
+                    Отмена
+                </button>
+                <button class="btn btn-danger" onclick="writeoffsPage.saveWriteoff()">
+                    Списать
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast уведомления -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Скрипты -->
+    <script type="module" src="../js/pages/writeoffs.js"></script>
+    <script>
+        function logout() {
+            if (confirm('Выйти из системы?')) {
+                localStorage.removeItem('auth_token');
+                localStorage.removeItem('user');
+                window.location.href = '../login.html';
+            }
+        }
+    </script>
+</body>
+</html>

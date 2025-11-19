@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отчёты - HAN CRM</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/reports.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>🌻 HAN CRM</h1>
+        </div>
+        <div class="nav-menu">
+            <a href="dashboard.html">Главная</a>
+            <a href="sales.html">Продажи</a>
+            <a href="clients.html">Клиенты</a>
+            <a href="products.html">Товары</a>
+            <a href="production.html" data-role="manager,admin">Производство</a>
+            <a href="writeoffs.html" data-role="manager,admin">Списания</a>
+            <a href="stock.html" data-role="manager,admin">Склад</a>
+            <a href="reports.html" class="active" data-role="manager,admin">Отчёты</a>
+        </div>
+        <div class="nav-user">
+            <span id="userName">Пользователь</span>
+            <button onclick="logout()" class="btn-logout">Выход</button>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <!-- Заголовок -->
+        <div class="page-header">
+            <div>
+                <h2>Аналитика и отчёты</h2>
+                <p class="page-subtitle">Статистика и аналитика бизнеса</p>
+            </div>
+            <div class="page-actions">
+                <button class="btn btn-secondary" onclick="reportsPage.printReport()">
+                    🖨️ Печать
+                </button>
+                <button class="btn btn-primary" onclick="reportsPage.exportToExcel()">
+                    📊 Экспорт в Excel
+                </button>
+            </div>
+        </div>
+
+        <!-- Период -->
+        <div class="period-selector">
+            <div class="period-buttons">
+                <button class="period-btn active" data-period="today" onclick="reportsPage.selectPeriod('today')">
+                    Сегодня
+                </button>
+                <button class="period-btn" data-period="week" onclick="reportsPage.selectPeriod('week')">
+                    Неделя
+                </button>
+                <button class="period-btn" data-period="month" onclick="reportsPage.selectPeriod('month')">
+                    Месяц
+                </button>
+                <button class="period-btn" data-period="custom" onclick="reportsPage.selectPeriod('custom')">
+                    Свой период
+                </button>
+            </div>
+            <div class="period-dates" id="customPeriod" style="display: none;">
+                <input type="date" id="dateFrom" class="form-control">
+                <span>—</span>
+                <input type="date" id="dateTo" class="form-control">
+                <button class="btn btn-secondary" onclick="reportsPage.applyCustomPeriod()">
+                    Применить
+                </button>
+            </div>
+            <div class="period-display">
+                Период: <strong id="periodDisplay">Сегодня</strong>
+            </div>
+        </div>
+
+        <!-- Сводная статистика -->
+        <div class="summary-section">
+            <h3>Сводная статистика</h3>
+            <div class="stats-grid">
+                <div class="stat-box sales">
+                    <div class="stat-icon">💰</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Продажи</div>
+                        <div class="stat-value" id="statSalesAmount">0 сом</div>
+                        <div class="stat-detail" id="statSalesCount">0 чеков</div>
+                    </div>
+                </div>
+                <div class="stat-box payments">
+                    <div class="stat-icon">💳</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Платежи</div>
+                        <div class="stat-value" id="statPaymentsAmount">0 сом</div>
+                        <div class="stat-detail" id="statPaymentsCount">0 платежей</div>
+                    </div>
+                </div>
+                <div class="stat-box debt">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Долги</div>
+                        <div class="stat-value" id="statDebtAmount">0 сом</div>
+                        <div class="stat-detail" id="statDebtCount">0 должников</div>
+                    </div>
+                </div>
+                <div class="stat-box overpayment">
+                    <div class="stat-icon">💵</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Переплаты</div>
+                        <div class="stat-value" id="statOverpaymentAmount">0 сом</div>
+                        <div class="stat-detail" id="statOverpaymentCount">0 клиентов</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Вкладки отчётов -->
+        <div class="reports-tabs">
+            <button class="report-tab active" data-tab="sales" onclick="reportsPage.switchTab('sales')">
+                📈 Продажи
+            </button>
+            <button class="report-tab" data-tab="clients" onclick="reportsPage.switchTab('clients')">
+                👥 Клиенты
+            </button>
+            <button class="report-tab" data-tab="products" onclick="reportsPage.switchTab('products')">
+                📦 Товары
+            </button>
+            <button class="report-tab" data-tab="stock" onclick="reportsPage.switchTab('stock')">
+                🏪 Склад
+            </button>
+        </div>
+
+        <!-- Контент вкладок -->
+        <div class="tabs-content">
+            <!-- Отчёт по продажам -->
+            <div class="tab-pane active" id="tabSales">
+                <div class="report-section">
+                    <h4>Динамика продаж</h4>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Дата</th>
+                                    <th>Продаж</th>
+                                    <th>Сумма</th>
+                                    <th>Оплачено</th>
+                                    <th>Долг</th>
+                                    <th>Средний чек</th>
+                                </tr>
+                            </thead>
+                            <tbody id="salesByDayBody">
+                                <tr><td colspan="6" class="text-center"><div class="loader"></div></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="report-section">
+                    <h4>Топ товары</h4>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>№</th>
+                                    <th>Товар</th>
+                                    <th>Продано (шт)</th>
+                                    <th>Сумма</th>
+                                    <th>Средняя цена</th>
+                                </tr>
+                            </thead>
+                            <tbody id="topProductsBody">
+                                <tr><td colspan="5" class="text-center"><div class="loader"></div></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Отчёт по клиентам -->
+            <div class="tab-pane" id="tabClients">
+                <div class="report-section">
+                    <h4>Топ клиенты</h4>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>№</th>
+                                    <th>Клиент</th>
+                                    <th>Продаж</th>
+                                    <th>Сумма</th>
+                                    <th>Оплачено</th>
+                                    <th>Долг</th>
+                                </tr>
+                            </thead>
+                            <tbody id="topClientsBody">
+                                <tr><td colspan="6" class="text-center"><div class="loader"></div></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="report-section">
+                    <h4>Должники</h4>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Клиент</th>
+                                    <th>Телефон</th>
+                                    <th>Продаж</th>
+                                    <th>Сумма долга</th>
+                                </tr>
+                            </thead>
+                            <tbody id="debtorsBody">
+                                <tr><td colspan="4" class="text-center"><div class="loader"></div></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Отчёт по товарам -->
+            <div class="tab-pane" id="tabProducts">
+                <div class="report-section">
+                    <h4>Продажи по товарам</h4>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Товар</th>
+                                    <th>Продано (шт)</th>
+                                    <th>Сумма</th>
+                                    <th>Средняя цена</th>
+                                    <th>Продаж</th>
+                                </tr>
+                            </thead>
+                            <tbody id="productsSalesBody">
+                                <tr><td colspan="5" class="text-center"><div class="loader"></div></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Отчёт по складу -->
+            <div class="tab-pane" id="tabStock">
+                <div class="report-section">
+                    <h4>Состояние склада</h4>
+                    <div class="stock-summary">
+                        <div class="stock-item">
+                            <div class="stock-label">Всего товаров:</div>
+                            <div class="stock-value" id="stockTotal">0</div>
+                        </div>
+                        <div class="stock-item">
+                            <div class="stock-label">В наличии:</div>
+                            <div class="stock-value" id="stockInStock">0</div>
+                        </div>
+                        <div class="stock-item">
+                            <div class="stock-label">Мало на складе:</div>
+                            <div class="stock-value warning" id="stockLowStock">0</div>
+                        </div>
+                        <div class="stock-item">
+                            <div class="stock-label">Закончились:</div>
+                            <div class="stock-value danger" id="stockOutOfStock">0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="report-section">
+                    <h4>Товары требующие внимания</h4>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Товар</th>
+                                    <th>Остаток</th>
+                                    <th>Статус</th>
+                                    <th>Цена</th>
+                                </tr>
+                            </thead>
+                            <tbody id="lowStockBody">
+                                <tr><td colspan="4" class="text-center"><div class="loader"></div></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Toast уведомления -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Скрипты -->
+    <script type="module" src="../js/pages/reports.js"></script>
+    <script>
+        function logout() {
+            if (confirm('Выйти из системы?')) {
+                localStorage.removeItem('auth_token');
+                localStorage.removeItem('user');
+                window.location.href = '../login.html';
+            }
+        }
+    </script>
+</body>
+</html>

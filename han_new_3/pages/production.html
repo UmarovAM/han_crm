@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Производство - HAN CRM</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/production.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>🌻 HAN CRM</h1>
+        </div>
+        <div class="nav-menu">
+            <a href="dashboard.html">Главная</a>
+            <a href="sales.html">Продажи</a>
+            <a href="clients.html">Клиенты</a>
+            <a href="products.html">Товары</a>
+            <a href="production.html" class="active" data-role="manager,admin">Производство</a>
+            <a href="writeoffs.html" data-role="manager,admin">Списания</a>
+            <a href="stock.html" data-role="manager,admin">Склад</a>
+            <a href="reports.html" data-role="manager,admin">Отчёты</a>
+        </div>
+        <div class="nav-user">
+            <span id="userName">Пользователь</span>
+            <button onclick="logout()" class="btn-logout">Выход</button>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <!-- Заголовок и действия -->
+        <div class="page-header">
+            <div>
+                <h2>Учёт производства</h2>
+                <p class="page-subtitle">Журнал производства товаров</p>
+            </div>
+            <div class="page-actions">
+                <button class="btn btn-secondary" onclick="productionPage.exportToExcel()">
+                    📊 Экспорт в Excel
+                </button>
+                <button class="btn btn-primary" onclick="productionPage.openCreateModal()">
+                    ➕ Добавить производство
+                </button>
+            </div>
+        </div>
+
+        <!-- Фильтры -->
+        <div class="filters-panel">
+            <div class="filter-group">
+                <label>Период:</label>
+                <input type="date" id="dateFrom" class="form-control">
+                <span>—</span>
+                <input type="date" id="dateTo" class="form-control">
+            </div>
+
+            <div class="filter-group">
+                <label>Смена:</label>
+                <select id="shiftFilter" class="form-control">
+                    <option value="">Все смены</option>
+                    <option value="day">Дневная</option>
+                    <option value="night">Ночная</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Товар:</label>
+                <select id="productFilter" class="form-control">
+                    <option value="">Все товары</option>
+                </select>
+            </div>
+
+            <button class="btn btn-secondary" onclick="productionPage.applyFilters()">
+                Применить
+            </button>
+            <button class="btn btn-secondary" onclick="productionPage.resetFilters()">
+                Сбросить
+            </button>
+        </div>
+
+        <!-- Статистика -->
+        <div class="stats-cards">
+            <div class="stat-card">
+                <div class="stat-icon">📦</div>
+                <div class="stat-info">
+                    <div class="stat-label">Всего записей</div>
+                    <div class="stat-value" id="statTotal">0</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🌞</div>
+                <div class="stat-info">
+                    <div class="stat-label">Дневная смена</div>
+                    <div class="stat-value" id="statDay">0</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🌙</div>
+                <div class="stat-info">
+                    <div class="stat-label">Ночная смена</div>
+                    <div class="stat-value" id="statNight">0</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">📊</div>
+                <div class="stat-info">
+                    <div class="stat-label">Произведено (шт)</div>
+                    <div class="stat-value" id="statQuantity">0</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Таблица производства -->
+        <div class="card">
+            <div class="table-container">
+                <table class="data-table" id="productionTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Дата и время</th>
+                            <th>Товар</th>
+                            <th>Количество</th>
+                            <th>Смена</th>
+                            <th>Примечание</th>
+                            <th>Создал</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productionTableBody">
+                        <tr>
+                            <td colspan="8" class="text-center">
+                                <div class="loader"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Пагинация -->
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </main>
+
+    <!-- Модальное окно: Добавление производства -->
+    <div id="productionModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Добавить производство</h3>
+                <button class="modal-close" onclick="productionPage.closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="productionForm">
+                    <div class="form-group">
+                        <label for="productSelect">Товар <span class="required">*</span></label>
+                        <select id="productSelect" class="form-control" required>
+                            <option value="">Выберите товар</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productionQuantity">Количество (шт) <span class="required">*</span></label>
+                        <input 
+                            type="number" 
+                            id="productionQuantity" 
+                            class="form-control" 
+                            min="1"
+                            placeholder="100"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productionShift">Смена <span class="required">*</span></label>
+                        <select id="productionShift" class="form-control" required>
+                            <option value="day">Дневная (08:00 - 20:00)</option>
+                            <option value="night">Ночная (20:00 - 08:00)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productionNote">Примечание</label>
+                        <textarea 
+                            id="productionNote" 
+                            class="form-control" 
+                            rows="3" 
+                            placeholder="Партия №123, особенности производства..."
+                        ></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="productionPage.closeModal()">
+                    Отмена
+                </button>
+                <button class="btn btn-primary" onclick="productionPage.saveProduction()">
+                    Добавить
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast уведомления -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Скрипты -->
+    <script type="module" src="../js/pages/production.js"></script>
+    <script>
+        function logout() {
+            if (confirm('Выйти из системы?')) {
+                localStorage.removeItem('auth_token');
+                localStorage.removeItem('user');
+                window.location.href = '../login.html';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,433 @@
+/* ========================================
+   REPORTS PAGE - Стили страницы отчётов
+   ======================================== */
+
+/* Селектор периода */
+.period-selector {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+.period-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.period-btn {
+    padding: 10px 20px;
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    transition: all 0.2s;
+}
+
+.period-btn:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+.period-btn.active {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: white;
+}
+
+.period-dates {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.period-dates input[type="date"] {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.period-dates span {
+    color: #999;
+}
+
+.period-display {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 14px;
+    color: #666;
+}
+
+.period-display strong {
+    color: #333;
+}
+
+/* Сводная статистика */
+.summary-section {
+    margin-bottom: 30px;
+}
+
+.summary-section h3 {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.stat-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 4px solid #e5e7eb;
+    transition: all 0.2s;
+}
+
+.stat-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.stat-box.sales {
+    border-left-color: #059669;
+}
+
+.stat-box.payments {
+    border-left-color: #2563eb;
+}
+
+.stat-box.debt {
+    border-left-color: #dc2626;
+}
+
+.stat-box.overpayment {
+    border-left-color: #f59e0b;
+}
+
+.stat-icon {
+    font-size: 36px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    border-radius: 12px;
+}
+
+.stat-content {
+    flex: 1;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.stat-detail {
+    font-size: 13px;
+    color: #999;
+}
+
+/* Вкладки отчётов */
+.reports-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e5e7eb;
+    flex-wrap: wrap;
+}
+
+.report-tab {
+    padding: 12px 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    color: #666;
+    transition: all 0.2s;
+}
+
+.report-tab:hover {
+    color: #2563eb;
+}
+
+.report-tab.active {
+    color: #2563eb;
+    border-bottom-color: #2563eb;
+}
+
+/* Контент вкладок */
+.tabs-content {
+    min-height: 400px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+/* Секции отчётов */
+.report-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.report-section h4 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+/* Итоги склада */
+.stock-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+.stock-item {
+    text-align: center;
+}
+
+.stock-label {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.stock-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+}
+
+.stock-value.warning {
+    color: #f59e0b;
+}
+
+.stock-value.danger {
+    color: #dc2626;
+}
+
+/* Таблицы в отчётах */
+.table-container {
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.data-table thead {
+    background: #f8f9fa;
+}
+
+.data-table th {
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.data-table td {
+    padding: 12px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.data-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Числовые значения */
+.amount-positive {
+    color: #059669;
+    font-weight: 600;
+}
+
+.amount-negative {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+.amount-neutral {
+    color: #666;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .period-buttons {
+        flex-direction: column;
+    }
+
+    .period-btn {
+        width: 100%;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-box {
+        padding: 20px;
+    }
+
+    .stat-icon {
+        font-size: 28px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .stat-value {
+        font-size: 20px;
+    }
+
+    .reports-tabs {
+        flex-direction: column;
+        border-bottom: none;
+    }
+
+    .report-tab {
+        border-bottom: 1px solid #e5e7eb;
+        border-left: 3px solid transparent;
+    }
+
+    .report-tab.active {
+        border-bottom: 1px solid #e5e7eb;
+        border-left-color: #2563eb;
+    }
+
+    .data-table {
+        font-size: 12px;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 8px 6px;
+    }
+
+    .stock-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stock-value {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stock-summary {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Загрузчик */
+.loader {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #2563eb;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 40px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Пустое состояние */
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #999;
+}
+
+.empty-state h4 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.empty-state p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Печать */
+@media print {
+    .navbar,
+    .page-actions,
+    .period-selector,
+    .reports-tabs {
+        display: none !important;
+    }
+
+    .page-header {
+        margin-bottom: 20px;
+    }
+
+    .report-section {
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+
+    .stat-box {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}

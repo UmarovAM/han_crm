@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - HAN CRM</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>🌻 HAN CRM</h1>
+        </div>
+        <div class="nav-menu">
+            <a href="dashboard.html" class="active">Главная</a>
+            <a href="sales.html">Продажи</a>
+            <a href="clients.html">Клиенты</a>
+            <a href="products.html">Товары</a>
+            <a href="production.html" data-role="manager,admin">Производство</a>
+            <a href="writeoffs.html" data-role="manager,admin">Списания</a>
+            <a href="stock.html" data-role="manager,admin">Склад</a>
+            <a href="reports.html" data-role="manager,admin">Отчёты</a>
+        </div>
+        <div class="nav-user">
+            <span id="userName">Пользователь</span>
+            <button onclick="logout()" class="btn-logout">Выход</button>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <!-- Приветствие -->
+        <div class="welcome-section">
+            <div class="welcome-text">
+                <h2>Добро пожаловать, <span id="userNameTitle">Пользователь</span>!</h2>
+                <p>Панель управления HAN CRM v3.1</p>
+            </div>
+            <div class="welcome-date">
+                <div class="date-display" id="currentDate"></div>
+                <div class="time-display" id="currentTime"></div>
+            </div>
+        </div>
+
+        <!-- Основная статистика -->
+        <div class="main-stats">
+            <div class="stat-card primary">
+                <div class="stat-icon">💰</div>
+                <div class="stat-content">
+                    <div class="stat-label">Продажи сегодня</div>
+                    <div class="stat-value" id="statTodaySales">0 сом</div>
+                    <div class="stat-detail" id="statTodaySalesCount">0 чеков</div>
+                </div>
+                <a href="sales.html" class="stat-link">Перейти →</a>
+            </div>
+
+            <div class="stat-card success">
+                <div class="stat-icon">💳</div>
+                <div class="stat-content">
+                    <div class="stat-label">Платежи сегодня</div>
+                    <div class="stat-value" id="statTodayPayments">0 сом</div>
+                    <div class="stat-detail" id="statTodayPaymentsCount">0 платежей</div>
+                </div>
+            </div>
+
+            <div class="stat-card warning">
+                <div class="stat-icon">📦</div>
+                <div class="stat-content">
+                    <div class="stat-label">Товары на складе</div>
+                    <div class="stat-value" id="statStockTotal">0</div>
+                    <div class="stat-detail" id="statStockLow">0 требуют внимания</div>
+                </div>
+                <a href="stock.html" class="stat-link">Перейти →</a>
+            </div>
+
+            <div class="stat-card danger">
+                <div class="stat-icon">📊</div>
+                <div class="stat-content">
+                    <div class="stat-label">Долги</div>
+                    <div class="stat-value" id="statDebtTotal">0 сом</div>
+                    <div class="stat-detail" id="statDebtCount">0 должников</div>
+                </div>
+                <a href="clients.html" class="stat-link">Перейти →</a>
+            </div>
+        </div>
+
+        <!-- Быстрые действия -->
+        <div class="quick-actions">
+            <h3>Быстрые действия</h3>
+            <div class="actions-grid">
+                <a href="sales.html" class="action-card">
+                    <div class="action-icon">🛒</div>
+                    <div class="action-title">Новая продажа</div>
+                    <div class="action-desc">Оформить продажу</div>
+                </a>
+                <a href="clients.html" class="action-card" data-role="manager,admin">
+                    <div class="action-icon">👥</div>
+                    <div class="action-title">Клиенты</div>
+                    <div class="action-desc">База клиентов</div>
+                </a>
+                <a href="products.html" class="action-card">
+                    <div class="action-icon">📦</div>
+                    <div class="action-title">Товары</div>
+                    <div class="action-desc">Каталог товаров</div>
+                </a>
+                <a href="production.html" class="action-card" data-role="manager,admin">
+                    <div class="action-icon">🏭</div>
+                    <div class="action-title">Производство</div>
+                    <div class="action-desc">Учёт производства</div>
+                </a>
+                <a href="writeoffs.html" class="action-card" data-role="manager,admin">
+                    <div class="action-icon">🗑️</div>
+                    <div class="action-title">Списания</div>
+                    <div class="action-desc">Списание товаров</div>
+                </a>
+                <a href="reports.html" class="action-card" data-role="manager,admin">
+                    <div class="action-icon">📈</div>
+                    <div class="action-title">Отчёты</div>
+                    <div class="action-desc">Аналитика</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Две колонки: последние продажи + должники -->
+        <div class="dashboard-grid">
+            <!-- Последние продажи -->
+            <div class="dashboard-widget">
+                <div class="widget-header">
+                    <h3>Последние продажи</h3>
+                    <a href="sales.html" class="widget-link">Все →</a>
+                </div>
+                <div class="widget-body">
+                    <div id="recentSales">
+                        <div class="loader"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Должники -->
+            <div class="dashboard-widget">
+                <div class="widget-header">
+                    <h3>Топ должники</h3>
+                    <a href="clients.html" class="widget-link">Все →</a>
+                </div>
+                <div class="widget-body">
+                    <div id="topDebtors">
+                        <div class="loader"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Склад: мало товаров -->
+        <div class="dashboard-widget" data-role="manager,admin">
+            <div class="widget-header">
+                <h3>Товары требующие внимания</h3>
+                <a href="stock.html" class="widget-link">Перейти на склад →</a>
+            </div>
+            <div class="widget-body">
+                <div id="lowStockProducts">
+                    <div class="loader"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Toast уведомления -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Скрипты -->
+    <script type="module" src="../js/pages/dashboard.js"></script>
+    <script>
+        function logout() {
+            if (confirm('Выйти из системы?')) {
+                localStorage.removeItem('auth_token');
+                localStorage.removeItem('user');
+                window.location.href = '../login.html';
+            }
+        }
+    </script>
+</body>
+</html>

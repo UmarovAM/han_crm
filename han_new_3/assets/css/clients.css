@@ -1,0 +1,441 @@
+/* ========================================
+   CLIENTS PAGE - Стили страницы клиентов
+   ======================================== */
+
+/* Фильтры */
+.filters-bar {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.search-box {
+    flex: 1;
+    min-width: 250px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Табы фильтров */
+.filter-tabs {
+    display: flex;
+    gap: 8px;
+}
+
+.filter-tab {
+    padding: 8px 16px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    transition: all 0.2s;
+}
+
+.filter-tab:hover {
+    background: #f8f9fa;
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+.filter-tab.active {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: white;
+}
+
+/* Таблица клиентов */
+.table-container {
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.data-table thead {
+    background: #f8f9fa;
+}
+
+.data-table th {
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #e5e7eb;
+    white-space: nowrap;
+}
+
+.data-table td {
+    padding: 12px;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: middle;
+}
+
+.data-table tbody tr {
+    transition: background 0.15s;
+}
+
+.data-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+/* Бейджи статуса */
+.status-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-badge.active {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.status-badge.inactive {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* Бейджи финансов */
+.finance-badge {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.finance-badge.debt {
+    color: #dc2626;
+}
+
+.finance-badge.overpayment {
+    color: #059669;
+}
+
+.finance-badge.zero {
+    color: #6b7280;
+}
+
+/* Кнопки действий */
+.action-buttons {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.btn-icon {
+    padding: 6px 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-icon:hover {
+    background: #f8f9fa;
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+.btn-icon.danger:hover {
+    background: #fee2e2;
+    border-color: #dc2626;
+    color: #dc2626;
+}
+
+.btn-icon.success:hover {
+    background: #d1fae5;
+    border-color: #059669;
+    color: #059669;
+}
+
+/* Модальные окна */
+.modal-large {
+    max-width: 900px;
+}
+
+.info-box {
+    padding: 15px;
+    background: #f8f9fa;
+    border-left: 4px solid #2563eb;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.info-box h4 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.info-box p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.info-box .highlight {
+    font-weight: 600;
+    color: #059669;
+}
+
+/* Детали клиента в модальном окне */
+.client-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.detail-section {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.detail-section h4 {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.detail-section p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.detail-label {
+    color: #666;
+    font-weight: 500;
+}
+
+.detail-value {
+    color: #333;
+    font-weight: 600;
+}
+
+/* История операций */
+.history-section {
+    margin-top: 20px;
+}
+
+.history-section h4 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.history-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.history-item {
+    padding: 12px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.history-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.history-item-type {
+    font-weight: 600;
+    color: #333;
+}
+
+.history-item-date {
+    font-size: 12px;
+    color: #999;
+}
+
+.history-item-amount {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.history-item-amount.positive {
+    color: #059669;
+}
+
+.history-item-amount.negative {
+    color: #dc2626;
+}
+
+.history-item-note {
+    font-size: 13px;
+    color: #666;
+    margin-top: 4px;
+}
+
+/* Пагинация */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+}
+
+.pagination-btn {
+    padding: 8px 12px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.15s;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background: #f8f9fa;
+    border-color: #2563eb;
+}
+
+.pagination-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.pagination-btn.active {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: white;
+}
+
+.pagination-info {
+    font-size: 14px;
+    color: #666;
+    padding: 0 12px;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .client-details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .filters-bar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .filter-tabs {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .page-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .page-actions {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .data-table {
+        font-size: 12px;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 8px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .btn-icon {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Загрузчик */
+.loader {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #2563eb;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 40px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Пустое состояние */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+}
+
+.empty-state svg {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    opacity: 0.3;
+}
+
+.empty-state h3 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    color: #666;
+}
+
+.empty-state p {
+    margin: 0;
+    font-size: 14px;
+}
